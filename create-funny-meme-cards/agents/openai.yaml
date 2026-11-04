@@ -1,0 +1,6 @@
+interface:
+  display_name: "夸损有梗"
+  short_description: "中文趣味表达、三风格搞笑海报，以及自己的昵称与二维码"
+  default_prompt: "请用 $create-funny-meme-cards 收集2024—2026年轻松好玩的中文表达，英文仅补充在大陆流行的；最新在前，给出有趣用法与来源；需要海报时从漫画、萌宠、复古三风格选取，品牌独立合成。"
+policy:
+  allow_implicit_invocation: true

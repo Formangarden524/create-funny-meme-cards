@@ -1,0 +1,18 @@
+// Deterministic service-worker lifecycle/cache policy tests, without external network.
+const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),source=fs.readFileSync(path.join(root,'sw.js'),'utf8');
+const scope='https://example.test/project/';
+function harness(){const stores=new Map(),handlers={},state={offline:false,claimed:false,skipped:false,failInstall:false};const cacheApi={open:async name=>{if(!stores.has(name))stores.set(name,new Map());const map=stores.get(name);return {addAll:async urls=>{if(state.failInstall)throw Error('download failed');urls.forEach(u=>map.set(u,new Response('cached:'+u)))},put:async(k,v)=>map.set(k,v),match:async k=>map.get(k)?.clone()};},keys:async()=>[...stores.keys()],delete:async k=>stores.delete(k),match:async k=>{for(const m of stores.values())if(m.has(k))return m.get(k).clone();}};const self={registration:{scope},clients:{claim:async()=>{state.claimed=true}},skipWaiting:()=>{state.skipped=true},addEventListener:(name,fn)=>handlers[name]=fn};vm.runInNewContext(source,{self,caches:cacheApi,URL,Response,AbortController,setTimeout,clearTimeout,fetch:async req=>{if(state.offline)throw Error('offline');return new Response('fresh:'+(typeof req==='string'?req:req.url));}});return {stores,state,handlers,cacheApi};}
+function lifecycle(h,name){let p;h.handlers[name]({waitUntil:v=>p=v});return p;}
+function request(h,p,method='GET',mode='cors'){let response;h.handlers.fetch({request:{url:new URL(p,scope).href,method,mode},respondWith:p=>response=p});return response;}
+(async()=>{
+ const h=harness();await lifecycle(h,'install');const cache=[...h.stores.keys()][0],resources=[...h.stores.get(cache).keys()];assert.ok(resources.length>=25);assert.ok(resources.every(u=>!u.includes('/api/')&&!u.includes('私人')&&!u.includes('采集收件箱')));
+ h.stores.set('another-app-cache',new Map());h.stores.set('meme-pwa:'+scope+':old',new Map());await lifecycle(h,'activate');assert.ok(h.state.claimed);assert.ok(h.stores.has('another-app-cache'));assert.ok(!h.stores.has('meme-pwa:'+scope+':old'));
+ for(const p of ['api/bootstrap','api/entries','api/entry?id=test','api/history','api/runs','知识库/私人/test.md'])assert.equal(request(h,p),undefined,'private/API must stay network-only');assert.equal(request(h,'api/edit','POST'),undefined);assert.equal(request(h,'https://other.test/x'),undefined);
+ h.state.offline=true;for(const p of ['app.html','预览.html','本地工作台.html','create-funny-meme-cards/assets/poster-studio/index.html?style=collection'])assert.ok((await (await request(h,p,'GET','navigate')).text()).startsWith('cached:'),'offline '+p);
+ assert.ok((await (await request(h,'unavailable.html','GET','navigate')).text()).endsWith('/offline.html'));
+ h.state.offline=false;const response=await request(h,'预览.html');assert.ok((await response.text()).startsWith('fresh:'));h.state.offline=true;assert.ok((await (await request(h,'预览.html')).text()).startsWith('fresh:'));
+ h.handlers.message({data:{type:'SKIP_WAITING'},source:{url:'https://outside.test/'}});assert.equal(h.state.skipped,false);h.handlers.message({data:{type:'SKIP_WAITING'},source:{url:scope+'app.html'}});assert.equal(h.state.skipped,true);
+ const failed=harness();failed.state.failInstall=true;await assert.rejects(lifecycle(failed,'install'));assert.equal(failed.stores.size,0,'failed partial install cleaned up');
+ console.log('PASS: public precache, scoped cleanup, private/API/POST bypass, offline pages, query URL normalization, online refresh, explicit activation, failed-install rollback');
+})().catch(e=>{console.error(e);process.exitCode=1;});

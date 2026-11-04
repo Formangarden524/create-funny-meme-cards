@@ -1,0 +1,17 @@
+{
+  "retrieved_on": "2026-11-05",
+  "files": [
+    {
+      "file": "qrcode.js",
+      "source_url": "https://raw.githubusercontent.com/kazuhikoarase/qrcode-generator/master/js/dist/qrcode.js",
+      "license": "MIT",
+      "sha256": "79ec86f82856005b1c887905cfccfcfbec3821ca61c7fd5a952faa5f778f791c"
+    },
+    {
+      "file": "jsQR.js",
+      "source_url": "https://raw.githubusercontent.com/cozmo/jsQR/master/dist/jsQR.js",
+      "license": "Apache-2.0",
+      "sha256": "3325b0888fa4745c4e6940897d8c4f426fbaae76901fcbfe1871a04e90a51655"
+    }
+  ]
+}

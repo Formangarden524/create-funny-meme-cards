@@ -1,0 +1,32 @@
+{
+  "version": "2b753c2efd179d27",
+  "public_resources": {
+    "app.html": "ccc7963465e7cada3a94383dab65d64b4934346ef5c0bf4e52da2ddfe68cc2be",
+    "app.css": "3b79fa69746c6d641f4b95b5d088ce3cd4975cd8684ea7c81311f304152ad4d3",
+    "app-home.js": "b63753f0604aaea4eee1f1671f05291d793e07720bfce350fd22e027aae561b4",
+    "app-pwa.js": "942f91d33cca5eaab05506a7fb7024269416a2ba7836138d7be548429c528bff",
+    "app-pwa.css": "747de984355551e4231304775be05bf566c59e1d92de3626c9ccdecab263349c",
+    "offline.html": "99dc62488f86d0b3697fa2b5c5aabc4b6dac60649426ec6adc0b7dce3deafe2a",
+    "manifest.webmanifest": "5de72fd6a065434c9f168f25ce0e68d48c8db1c8adbf670488ead963642628e2",
+    "预览.html": "8bfc9c9c07b0ed340a7a45975e8e5ef3b773255c8c9561c53eff9ef0db2c2ca9",
+    "preview.js": "09d0a6341cda22b3a68591ea8e584fdce66ecc5134d05f5fa86a971d440b61a6",
+    "本地工作台.html": "1e428c3a50955c0f0ecee973b155a6d93367e65bb51a3674b41b4bf66c43a2ef",
+    "workbench.js": "8bf1a87e95bdd885fb5a19c2169635c7faf40486e1accf0b834986ac5e1a9ca5",
+    "workbench.css": "ec9041991be66821e4dbb9bfc463c284c211136b41ac0dc0e1d9a446981f65a8",
+    "pwa/icons/icon.svg": "0339347c0f6f328db538b43d4f7821b4b33e9bfd585f390b20da3fea984bafd5",
+    "pwa/icons/icon-192.png": "9d621fcec0c159bb361ae6f0d18b145ab18f6dd40ed5d3410ea29c8604f63dad",
+    "pwa/icons/icon-512.png": "c3a82f65d539f20109597747014fcd23ff9c1d5ce55ef1625ad1b9fbd305df1c",
+    "pwa/icons/apple-touch-icon.png": "69128341934d40bb2418586348bbf0b78e1df6579be7f624ae6d2531e7849677",
+    "create-funny-meme-cards/assets/knowledge/knowledge.json": "38b703ea20518cd6c6fb98c708b2ecc543fa61e2ba0078c359bf130ebd6f0e88",
+    "create-funny-meme-cards/assets/knowledge/index.json": "6a9094cd9592829253094822e9a9e70ff7750b8a2b7d26dc1411f737cbe85a13",
+    "create-funny-meme-cards/assets/knowledge/focus.json": "d494c7633bf1ddb3c4ebf6367e685161d36dcf5d3b9308f1c900452812427e93",
+    "create-funny-meme-cards/assets/poster-studio/index.html": "14a2b6fd97c211c53e961c8f359d652390a731b0e96aa2cb9da02211761dc1c6",
+    "create-funny-meme-cards/assets/poster-studio/studio.css": "5e3b998b9d61b47eb9e8b7657069200f17cc4857ed5f741c69bcc1126d026ef1",
+    "create-funny-meme-cards/assets/poster-studio/studio.js": "b23bb0281c137b9a2e2e65054b724686cb26deb67865d492459375c9d105b0d3",
+    "create-funny-meme-cards/assets/poster-studio/styles.js": "a4b0c38c88b2f1abf7084070b5822183371355a63fa77622153aef1eabe9499b",
+    "create-funny-meme-cards/assets/poster-studio/samples.js": "a7855541eb72cf9f8c3a0496e8dc5c3c64da1b6345849ce26b281b314835e476",
+    "create-funny-meme-cards/assets/poster-studio/vendor/qrcode.js": "79ec86f82856005b1c887905cfccfcfbec3821ca61c7fd5a952faa5f778f791c",
+    "create-funny-meme-cards/assets/poster-studio/vendor/jsQR.js": "3325b0888fa4745c4e6940897d8c4f426fbaae76901fcbfe1871a04e90a51655"
+  },
+  "private_api_cached": false
+}

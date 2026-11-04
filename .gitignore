@@ -1,0 +1,27 @@
+__pycache__/
+*.pyc
+.DS_Store
+*.tmp
+*.lock
+.env
+.env.*
+config/brand.local.json
+config/*.local.json
+private/
+runtime/
+outputs/
+create-funny-meme-cards/assets/private/
+.obsidian/
+.venv/
+*.local.json
+知识库/私人/
+
+知识库/采集收件箱/
+
+# Local credentials, working files and dependency caches
+*.pem
+*.key
+*.log
+node_modules/
+.coverage
+.pytest_cache/

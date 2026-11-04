@@ -1,0 +1,716 @@
+{
+  "reviewed_on": "2026-11-05",
+  "policy": "中文优先；好玩先于知识性；英文须有大陆流行证据。入选为编辑初筛，不代表用户验收或实测喜爱率。 新增社交用法复查：主库每条须有具体用法与适用范围，对话接法可选；例句是编辑候选，不是受众已验证的社交货币。",
+  "entries": {
+    "en-decel": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-doomer": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-fricy": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-friendslop": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-ghost-job": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-mogging": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-pdoom": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-black-cat-clap": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-scientists-hi": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-stark-turn": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-blocking-street": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-chile-shape": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-lets-groove": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-things-to-say": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-gucci-morty": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-la-peace": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-niu-lai": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-petra-parker": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "cn-lived-human": {
+      "decision": "hold",
+      "reason": "偏概念、技术、身份或作品介绍；当前条目缺少足够直接的趣味用法，暂退出主库。",
+      "mainland_usage_evidence": []
+    },
+    "en-gut-genug": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-drooling-cat": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-he-is-twenty": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "cn-boundary-sense": {
+      "decision": "hold",
+      "reason": "偏概念、技术、身份或作品介绍；当前条目缺少足够直接的趣味用法，暂退出主库。",
+      "mainland_usage_evidence": []
+    },
+    "cn-relaxed": {
+      "decision": "hold",
+      "reason": "偏概念、技术、身份或作品介绍；当前条目缺少足够直接的趣味用法，暂退出主库。",
+      "mainland_usage_evidence": []
+    },
+    "cn-raise-lobster": {
+      "decision": "hold",
+      "reason": "偏概念、技术、身份或作品介绍；当前条目缺少足够直接的趣味用法，暂退出主库。",
+      "mainland_usage_evidence": []
+    },
+    "cn-sorry-self": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "cn-love-self": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "cn-break-cauldron": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "cn-curator": {
+      "decision": "hold",
+      "reason": "偏概念、技术、身份或作品介绍；当前条目缺少足够直接的趣味用法，暂退出主库。",
+      "mainland_usage_evidence": []
+    },
+    "cn-deepseek-name": {
+      "decision": "hold",
+      "reason": "偏概念、技术、身份或作品介绍；当前条目缺少足够直接的趣味用法，暂退出主库。",
+      "mainland_usage_evidence": []
+    },
+    "cn-demon-pearl": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "cn-elegant-person": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "cn-emotional-value": {
+      "decision": "hold",
+      "reason": "偏概念、技术、身份或作品介绍；当前条目缺少足够直接的趣味用法，暂退出主库。",
+      "mainland_usage_evidence": []
+    },
+    "cn-entered-heaven": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "cn-group-buy-x": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "cn-how-so-what": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "cn-mountain-monsters": {
+      "decision": "hold",
+      "reason": "偏概念、技术、身份或作品介绍；当前条目缺少足够直接的趣味用法，暂退出主库。",
+      "mainland_usage_evidence": []
+    },
+    "cn-practice-moment": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "cn-take-seriously": {
+      "decision": "hold",
+      "reason": "偏概念、技术、身份或作品介绍；当前条目缺少足够直接的趣味用法，暂退出主库。",
+      "mainland_usage_evidence": []
+    },
+    "cn-toast-self": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "cn-unorthodox": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "cn-village-cafe": {
+      "decision": "hold",
+      "reason": "偏概念、技术、身份或作品介绍；当前条目缺少足够直接的趣味用法，暂退出主库。",
+      "mainland_usage_evidence": []
+    },
+    "cn-wealth-come": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "cn-your-order": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "cn-basic-not-basic": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "cn-composed-rushed": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "cn-cyber-compare": {
+      "decision": "hold",
+      "reason": "偏概念、技术、身份或作品介绍；当前条目缺少足够直接的趣味用法，暂退出主库。",
+      "mainland_usage_evidence": []
+    },
+    "cn-digital-nomad": {
+      "decision": "hold",
+      "reason": "偏概念、技术、身份或作品介绍；当前条目缺少足够直接的趣味用法，暂退出主库。",
+      "mainland_usage_evidence": []
+    },
+    "cn-embodied-term": {
+      "decision": "hold",
+      "reason": "偏概念、技术、身份或作品介绍；当前条目缺少足够直接的趣味用法，暂退出主库。",
+      "mainland_usage_evidence": []
+    },
+    "cn-goods": {
+      "decision": "hold",
+      "reason": "偏概念、技术、身份或作品介绍；当前条目缺少足够直接的趣味用法，暂退出主库。",
+      "mainland_usage_evidence": []
+    },
+    "cn-prefabricated": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "en-aura-farming": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-rage-bait": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-parasocial": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-coolcation": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-glaze": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-henry": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-micro-retirement": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-taskmasking": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-vibe-coding": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-67": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-agentic": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-clanker": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-gen-z-stare": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-delulu": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-skibidi": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-tradwife": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-gorilla-debate": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "global-italian-brainrot": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "global-steve": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "cn-abstract": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "cn-city": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "cn-freshly": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "cn-intense-calm": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "cn-jie": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "cn-overheated": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "cn-so-what": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "cn-stealth-vibe": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "cn-value-rises": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "cn-you-excel": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "cn-hard-control": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "en-demure": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-toothless": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-ai-slop": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-ate": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-aura": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-bedrotting": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-brat": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-cooked": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-cope": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-crash-out": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-girlypop": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-hold-space": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-lock-in": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-unserious": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-w": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-x-xed": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "en-yap": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "global-brainrot": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "cn-work-smell": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "cn-young-master": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "global-rizz": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "cn-mainly": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "cn-partner": {
+      "decision": "hold",
+      "reason": "偏概念、技术、身份或作品介绍；当前条目缺少足够直接的趣味用法，暂退出主库。",
+      "mainland_usage_evidence": []
+    },
+    "cn-showy": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "cn-digital-pickle": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "cn-defense-broken": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "cn-shocked": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "cn-yyds": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "cn-worker": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "global-woman-cat": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "cn-hardcore": {
+      "decision": "hold",
+      "reason": "偏概念、技术、身份或作品介绍；当前条目缺少足够直接的趣味用法，暂退出主库。",
+      "mainland_usage_evidence": []
+    },
+    "cn-lemon": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "cn-earthy-lines": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "cn-playful": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "global-distracted": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "cn-another-operation": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "cn-call": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "cn-surprise": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "cn-friendship-boat": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "cn-melon-spectator": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "cn-prehistoric-power": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "cn-quiet": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "cn-repeat-three": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "cn-talent": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "global-doge": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "cn-geli": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "cn-jia-dinner": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "global-rickroll": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "global-lolcats": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "cn-bump": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "cn-diving": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "cn-sofa": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "cn-wo-xihuan": {
+      "decision": "include",
+      "reason": "可用于具体社交互动；已补触发场景、自拟接话句、对方可接的下一句及关系边界，尚未受众实测。",
+      "mainland_usage_evidence": []
+    },
+    "global-all-your-base": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "global-hampster": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "global-dancing-baby": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "early-smiley": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "early-arpa": {
+      "decision": "hold",
+      "reason": "现有证据主要指向海外传播，尚未证明在中国大陆流行；退出主库，等待大陆使用证据。",
+      "mainland_usage_evidence": []
+    },
+    "cn-hang-to-la": {
+      "decision": "include",
+      "reason": "用户明确点名；已有实际读取的大陆使用证据，保留趣味改编，不强制接话。",
+      "mainland_usage_evidence": []
+    },
+    "cn-big-result": {
+      "decision": "include",
+      "reason": "用户明确点名；已有实际读取的大陆使用证据，保留趣味改编，不强制接话。",
+      "mainland_usage_evidence": []
+    },
+    "cn-big-water": {
+      "decision": "include",
+      "reason": "用户明确点名；已有实际读取的大陆使用证据，保留趣味改编，不强制接话。",
+      "mainland_usage_evidence": []
+    }
+  }
+}

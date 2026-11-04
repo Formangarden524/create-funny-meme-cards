@@ -1,0 +1,37 @@
+{
+  "schema_version": "0.2.0-preview",
+  "data_dir": null,
+  "brand": {
+    "enabled": false,
+    "nickname": "你的昵称",
+    "signature": null,
+    "logo_path": null,
+    "qr_path": null,
+    "footer_mode": "none",
+    "qr_mode": "none",
+    "qr_url": null
+  },
+  "appearance": {
+    "background": "#FFFFFF",
+    "ink": "#242424",
+    "accent": "#35685B",
+    "style_id": "comic"
+  },
+  "history": {
+    "record_by_default": true,
+    "default_reuse_mode": "new_text",
+    "strict_new_scope": "accessible_history_and_template_family"
+  },
+  "project_credit": {
+    "author": "秋哥",
+    "project_name": "夸损有梗",
+    "repository_url": "https://github.com/Formangarden524/create-funny-meme-cards",
+    "output_credit": true,
+    "text": "工具源自：秋哥 · 夸损有梗"
+  },
+  "path_rules": {
+    "data_dir": "实际使用时填用户指定的绝对路径；null表示尚未配置持久化",
+    "brand_asset_paths": "相对路径以本配置文件目录为基准"
+  },
+  "status": "local_studio_available_history_not_connected"
+}

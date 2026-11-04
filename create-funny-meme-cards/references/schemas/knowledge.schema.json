@@ -1,0 +1,659 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "0.4.0-preview"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "prepared_on": {
+      "type": "string",
+      "format": "date"
+    },
+    "stage": {
+      "const": "steps_1_2_preview"
+    },
+    "author": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "repository_url": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "attribution_status": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "name",
+        "repository_url",
+        "attribution_status"
+      ],
+      "additionalProperties": false
+    },
+    "scope_notes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "chronology_context": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "year": {
+            "type": "integer"
+          },
+          "event": {
+            "type": "string",
+            "minLength": 1
+          },
+          "is_meme": {
+            "const": false
+          },
+          "source": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": [
+          "year",
+          "event",
+          "is_meme",
+          "source"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/source"
+      }
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/record"
+      }
+    },
+    "backlog": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9-]*$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "candidate_period": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "const": "pending"
+          },
+          "clue_urls": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "uri"
+            }
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "candidate_period",
+          "status",
+          "clue_urls",
+          "reason"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "title",
+    "prepared_on",
+    "stage",
+    "author",
+    "scope_notes",
+    "chronology_context",
+    "sources",
+    "records",
+    "backlog"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "夸损有梗公共知识包预览格式",
+  "$defs": {
+    "source": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9-]*$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://"
+        },
+        "type": {
+          "enum": [
+            "primary",
+            "first_person_retrospective",
+            "secondary",
+            "contemporary_news_reprint",
+            "contemporary_news",
+            "publisher_announcement",
+            "platform_editorial",
+            "institutional_republication",
+            "institutional_compilation",
+            "organizer_announcement",
+            "institutional_announcement",
+            "contemporary_news_commentary",
+            "community_poll"
+          ]
+        },
+        "published_date": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^\\d{4}(-\\d{2}(-\\d{2})?)?$"
+        },
+        "accessed_on": {
+          "type": "string",
+          "format": "date"
+        },
+        "read_method": {
+          "enum": [
+            "page_read",
+            "page_read_prior_seed",
+            "search_excerpt"
+          ]
+        },
+        "locator": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "limitations": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "url",
+        "type",
+        "published_date",
+        "accessed_on",
+        "read_method",
+        "locator",
+        "limitations"
+      ],
+      "additionalProperties": false
+    },
+    "record": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9-]*$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "aliases": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "kind": {
+          "enum": [
+            "animation_trend",
+            "character_trend",
+            "cultural_keyword",
+            "early_network_humor",
+            "network_expression",
+            "network_slang",
+            "phrase_template",
+            "prank_format",
+            "visual_meme",
+            "visual_template",
+            "technical_term"
+          ]
+        },
+        "language": {
+          "type": "string",
+          "minLength": 1
+        },
+        "culture_scope": {
+          "type": "string",
+          "minLength": 1
+        },
+        "dates": {
+          "type": "object",
+          "properties": {
+            "reference_year": {
+              "type": "integer",
+              "minimum": 1960,
+              "maximum": 2100
+            },
+            "decade": {
+              "type": "string",
+              "pattern": "^\\d{3}0s$"
+            },
+            "grouping_reason": {
+              "type": "string",
+              "minLength": 1
+            },
+            "original_work_date": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "pattern": "^\\d{4}(-\\d{2}(-\\d{2})?)?$"
+            },
+            "documented_event_date": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "pattern": "^\\d{4}(-\\d{2}(-\\d{2})?)?$"
+            },
+            "popularized_date": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "pattern": "^\\d{4}(-\\d{2}(-\\d{2})?)?$"
+            },
+            "origin_status": {
+              "enum": [
+                "not_fully_verified",
+                "documented_origin"
+              ]
+            }
+          },
+          "required": [
+            "reference_year",
+            "decade",
+            "grouping_reason",
+            "original_work_date",
+            "documented_event_date",
+            "popularized_date",
+            "origin_status"
+          ],
+          "additionalProperties": false
+        },
+        "meaning": {
+          "type": "string",
+          "minLength": 1
+        },
+        "template_family": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9-]*$"
+        },
+        "editorial": {
+          "type": "object",
+          "properties": {
+            "humor_mechanism": {
+              "type": "string",
+              "minLength": 1
+            },
+            "visual_idea": {
+              "type": "string",
+              "minLength": 1
+            },
+            "scenarios": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 1
+            },
+            "suitability": {
+              "enum": [
+                "history",
+                "adapt",
+                "direct"
+              ]
+            },
+            "is_editorial_interpretation": {
+              "const": true
+            }
+          },
+          "required": [
+            "humor_mechanism",
+            "visual_idea",
+            "scenarios",
+            "suitability",
+            "is_editorial_interpretation"
+          ],
+          "additionalProperties": false
+        },
+        "evidence": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "properties": {
+              "source_id": {
+                "type": "string",
+                "pattern": "^[a-z0-9][a-z0-9-]*$"
+              },
+              "supports": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "source_id",
+              "supports"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "review_status": {
+          "enum": [
+            "source_checked",
+            "pending"
+          ]
+        },
+        "popularity": {
+          "type": "object",
+          "properties": {
+            "current_status": {
+              "enum": [
+                "not_measured",
+                "snapshot_available"
+              ]
+            },
+            "snapshots": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/heatSnapshot"
+              }
+            }
+          },
+          "required": [
+            "current_status",
+            "snapshots"
+          ],
+          "additionalProperties": false
+        },
+        "cautions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "rights": {
+          "type": "object",
+          "properties": {
+            "third_party_media_included": {
+              "type": "boolean"
+            },
+            "media_reuse_permission": {
+              "enum": [
+                "not_established",
+                "authorized",
+                "open_license"
+              ]
+            },
+            "original_explanation_license": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "third_party_media_included",
+            "media_reuse_permission",
+            "original_explanation_license"
+          ],
+          "additionalProperties": false
+        },
+        "categories": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "hotword",
+              "meme",
+              "slang"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "recent_evidence_date": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^\\d{4}(-\\d{2}(-\\d{2})?)?$"
+        },
+        "attention_basis": {
+          "type": "string",
+          "minLength": 1
+        },
+        "social_use": {
+          "type": "object",
+          "properties": {
+            "audience": {
+              "type": "string",
+              "minLength": 1
+            },
+            "trigger": {
+              "type": "string",
+              "minLength": 1
+            },
+            "line": {
+              "type": "string",
+              "minLength": 1
+            },
+            "follow_up": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "avoid": {
+              "type": "string",
+              "minLength": 1
+            },
+            "functions": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "enum": [
+                  "reply",
+                  "tease",
+                  "self_mock",
+                  "praise",
+                  "bond",
+                  "rating",
+                  "stance",
+                  "jargon"
+                ]
+              }
+            },
+            "evidence_status": {
+              "const": "editorial_example_not_audience_tested"
+            }
+          },
+          "required": [
+            "functions",
+            "audience",
+            "trigger",
+            "line",
+            "follow_up",
+            "avoid",
+            "evidence_status"
+          ],
+          "additionalProperties": false
+        },
+        "ranking_levels": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 20,
+          "items": {
+            "type": "object",
+            "properties": {
+              "rank": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "meaning": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "rank",
+              "label",
+              "meaning"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "aliases",
+        "kind",
+        "language",
+        "culture_scope",
+        "dates",
+        "meaning",
+        "template_family",
+        "editorial",
+        "evidence",
+        "review_status",
+        "popularity",
+        "cautions",
+        "rights",
+        "categories",
+        "recent_evidence_date",
+        "attention_basis",
+        "social_use"
+      ],
+      "additionalProperties": false
+    },
+    "heatSnapshot": {
+      "type": "object",
+      "properties": {
+        "platform": {
+          "type": "string",
+          "minLength": 1
+        },
+        "object_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "metric": {
+          "type": "string",
+          "minLength": 1
+        },
+        "value": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "unit": {
+          "type": "string",
+          "minLength": 1
+        },
+        "observed_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "region": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "window_start": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "window_end": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "observation_type": {
+          "enum": [
+            "post_metric",
+            "platform_rank",
+            "editorial_selection"
+          ]
+        }
+      },
+      "required": [
+        "platform",
+        "object_id",
+        "source_url",
+        "metric",
+        "value",
+        "unit",
+        "observed_at",
+        "region",
+        "window_start",
+        "window_end",
+        "observation_type"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "status": "editorial_demo_not_generated_image_or_usage_history",
+  "examples": [
+    {
+      "entry_id": "cn-diving",
+      "historical_expression": "潜水",
+      "new_copy": "你不是不发言，你是在群聊里做深海考察。",
+      "nature": "本次演示改编，不是历史原句或实际用户作品",
+      "scene": "朋友群聊",
+      "visual": "群聊气泡漂在水面，一个戴潜水镜的小人在下方认真做笔记。"
+    },
+    {
+      "entry_id": "cn-another-operation",
+      "historical_expression": "还有这种操作",
+      "new_copy": "别人忙着爬梯子，你先看了一眼旁边的门。",
+      "nature": "本次演示自拟，借鉴意外解法机制，不宣称全网首创",
+      "scene": "夸朋友解题灵活",
+      "visual": "一群小人挤在高梯旁，另一个小人推开近在旁边的小门。"
+    },
+    {
+      "entry_id": "cn-work-smell",
+      "historical_expression": "班味",
+      "new_copy": "你下班了，待办清单还在你头顶加班。",
+      "nature": "本次演示改编，不是历史原句或实际用户作品",
+      "scene": "职场自嘲",
+      "visual": "小人换上拖鞋，头顶的小云团仍举着一叠待办纸。"
+    }
+  ]
+}

@@ -1,0 +1,1053 @@
+{
+  "schema_version": "0.4.0-preview",
+  "record_count": 57,
+  "entries": [
+    {
+      "id": "cn-big-water",
+      "title": "喝大水",
+      "year": 2026,
+      "decade": "2020s",
+      "language": "zh-CN",
+      "kind": "phrase_template",
+      "template_family": "cn-big-water",
+      "suitability": "adapt",
+      "categories": [
+        "hotword",
+        "meme",
+        "slang"
+      ],
+      "recent_evidence_date": "2026-10-28",
+      "social_functions": [
+        "jargon",
+        "self_mock",
+        "bond"
+      ]
+    },
+    {
+      "id": "cn-big-result",
+      "title": "拿大结果",
+      "year": 2026,
+      "decade": "2020s",
+      "language": "zh-CN",
+      "kind": "phrase_template",
+      "template_family": "cn-big-result",
+      "suitability": "adapt",
+      "categories": [
+        "hotword",
+        "meme",
+        "slang"
+      ],
+      "recent_evidence_date": "2026-10-27",
+      "social_functions": [
+        "jargon",
+        "self_mock",
+        "stance"
+      ]
+    },
+    {
+      "id": "cn-hang-to-la",
+      "title": "从夯到拉",
+      "year": 2026,
+      "decade": "2020s",
+      "language": "zh-CN",
+      "kind": "phrase_template",
+      "template_family": "cn-hang-to-la",
+      "suitability": "adapt",
+      "categories": [
+        "hotword",
+        "meme",
+        "slang"
+      ],
+      "recent_evidence_date": "2026-07-21",
+      "social_functions": [
+        "rating",
+        "stance"
+      ]
+    },
+    {
+      "id": "cn-sorry-self",
+      "title": "对不起老己",
+      "year": 2026,
+      "decade": "2020s",
+      "language": "zh-CN",
+      "kind": "phrase_template",
+      "template_family": "cn-sorry-self",
+      "suitability": "adapt",
+      "categories": [
+        "hotword",
+        "meme"
+      ],
+      "recent_evidence_date": "2026-03-19",
+      "social_functions": [
+        "self_mock"
+      ]
+    },
+    {
+      "id": "cn-love-self",
+      "title": "爱你老己",
+      "year": 2026,
+      "decade": "2020s",
+      "language": "zh-CN",
+      "kind": "phrase_template",
+      "template_family": "cn-love-self",
+      "suitability": "adapt",
+      "categories": [
+        "hotword",
+        "meme",
+        "slang"
+      ],
+      "recent_evidence_date": "2026-01-07",
+      "social_functions": [
+        "bond"
+      ]
+    },
+    {
+      "id": "cn-break-cauldron",
+      "title": "助我破鼎",
+      "year": 2025,
+      "decade": "2020s",
+      "language": "zh-CN",
+      "kind": "phrase_template",
+      "template_family": "cn-break-cauldron",
+      "suitability": "adapt",
+      "categories": [
+        "hotword",
+        "meme"
+      ],
+      "recent_evidence_date": "2025-12-12",
+      "social_functions": [
+        "bond"
+      ]
+    },
+    {
+      "id": "cn-demon-pearl",
+      "title": "魔丸&灵珠",
+      "year": 2025,
+      "decade": "2020s",
+      "language": "zh-CN",
+      "kind": "network_slang",
+      "template_family": "cn-demon-pearl",
+      "suitability": "adapt",
+      "categories": [
+        "hotword",
+        "meme",
+        "slang"
+      ],
+      "recent_evidence_date": "2025-12-12",
+      "social_functions": [
+        "self_mock"
+      ]
+    },
+    {
+      "id": "cn-elegant-person",
+      "title": "高雅人士",
+      "year": 2025,
+      "decade": "2020s",
+      "language": "zh-CN",
+      "kind": "visual_template",
+      "template_family": "cn-elegant-person",
+      "suitability": "adapt",
+      "categories": [
+        "hotword",
+        "meme"
+      ],
+      "recent_evidence_date": "2025-12-12",
+      "social_functions": [
+        "tease"
+      ]
+    },
+    {
+      "id": "cn-entered-heaven",
+      "title": "误闯天家",
+      "year": 2025,
+      "decade": "2020s",
+      "language": "zh-CN",
+      "kind": "phrase_template",
+      "template_family": "cn-entered-heaven",
+      "suitability": "adapt",
+      "categories": [
+        "hotword",
+        "meme",
+        "slang"
+      ],
+      "recent_evidence_date": "2025-12-12",
+      "social_functions": [
+        "praise"
+      ]
+    },
+    {
+      "id": "cn-group-buy-x",
+      "title": "拼好×",
+      "year": 2025,
+      "decade": "2020s",
+      "language": "zh-CN",
+      "kind": "phrase_template",
+      "template_family": "cn-group-buy-x",
+      "suitability": "adapt",
+      "categories": [
+        "hotword",
+        "meme",
+        "slang"
+      ],
+      "recent_evidence_date": "2025-12-12",
+      "social_functions": [
+        "bond"
+      ]
+    },
+    {
+      "id": "cn-how-so-what",
+      "title": "如何呢又能怎",
+      "year": 2025,
+      "decade": "2020s",
+      "language": "zh-CN",
+      "kind": "phrase_template",
+      "template_family": "cn-how-so-what",
+      "suitability": "adapt",
+      "categories": [
+        "hotword",
+        "meme"
+      ],
+      "recent_evidence_date": "2025-12-12",
+      "social_functions": [
+        "reply",
+        "stance"
+      ]
+    },
+    {
+      "id": "cn-practice-moment",
+      "title": "千百次练习只为这一刻",
+      "year": 2025,
+      "decade": "2020s",
+      "language": "zh-CN",
+      "kind": "phrase_template",
+      "template_family": "cn-practice-moment",
+      "suitability": "adapt",
+      "categories": [
+        "hotword",
+        "meme"
+      ],
+      "recent_evidence_date": "2025-12-12",
+      "social_functions": [
+        "self_mock"
+      ]
+    },
+    {
+      "id": "cn-toast-self",
+      "title": "敬自己一杯",
+      "year": 2025,
+      "decade": "2020s",
+      "language": "zh-CN",
+      "kind": "phrase_template",
+      "template_family": "cn-toast-self",
+      "suitability": "adapt",
+      "categories": [
+        "hotword",
+        "meme"
+      ],
+      "recent_evidence_date": "2025-12-12",
+      "social_functions": [
+        "self_mock"
+      ]
+    },
+    {
+      "id": "cn-unorthodox",
+      "title": "邪修",
+      "year": 2025,
+      "decade": "2020s",
+      "language": "zh-CN",
+      "kind": "network_slang",
+      "template_family": "cn-unorthodox",
+      "suitability": "adapt",
+      "categories": [
+        "hotword",
+        "slang"
+      ],
+      "recent_evidence_date": "2025-12-12",
+      "social_functions": [
+        "self_mock"
+      ]
+    },
+    {
+      "id": "cn-wealth-come",
+      "title": "来财",
+      "year": 2025,
+      "decade": "2020s",
+      "language": "zh-CN",
+      "kind": "phrase_template",
+      "template_family": "cn-wealth-come",
+      "suitability": "adapt",
+      "categories": [
+        "hotword",
+        "meme"
+      ],
+      "recent_evidence_date": "2025-12-12",
+      "social_functions": [
+        "bond"
+      ]
+    },
+    {
+      "id": "cn-your-order",
+      "title": "做完你的做你的",
+      "year": 2025,
+      "decade": "2020s",
+      "language": "zh-CN",
+      "kind": "phrase_template",
+      "template_family": "cn-your-order",
+      "suitability": "adapt",
+      "categories": [
+        "hotword",
+        "meme"
+      ],
+      "recent_evidence_date": "2025-12-12",
+      "social_functions": [
+        "self_mock",
+        "jargon"
+      ]
+    },
+    {
+      "id": "cn-basic-not-basic",
+      "title": "××基础，××不基础",
+      "year": 2025,
+      "decade": "2020s",
+      "language": "zh-CN",
+      "kind": "phrase_template",
+      "template_family": "cn-basic-not-basic",
+      "suitability": "adapt",
+      "categories": [
+        "hotword",
+        "meme"
+      ],
+      "recent_evidence_date": "2025-12-02",
+      "social_functions": [
+        "tease",
+        "rating"
+      ]
+    },
+    {
+      "id": "cn-composed-rushed",
+      "title": "从从容容，匆匆忙忙",
+      "year": 2025,
+      "decade": "2020s",
+      "language": "zh-CN",
+      "kind": "phrase_template",
+      "template_family": "cn-composed-rushed",
+      "suitability": "adapt",
+      "categories": [
+        "hotword",
+        "meme"
+      ],
+      "recent_evidence_date": "2025-12-02",
+      "social_functions": [
+        "self_mock"
+      ]
+    },
+    {
+      "id": "cn-prefabricated",
+      "title": "预制××",
+      "year": 2025,
+      "decade": "2020s",
+      "language": "zh-CN",
+      "kind": "phrase_template",
+      "template_family": "cn-prefabricated",
+      "suitability": "adapt",
+      "categories": [
+        "hotword",
+        "meme",
+        "slang"
+      ],
+      "recent_evidence_date": "2025-12-02",
+      "social_functions": [
+        "self_mock",
+        "jargon"
+      ]
+    },
+    {
+      "id": "cn-abstract",
+      "title": "搞抽象",
+      "year": 2024,
+      "decade": "2020s",
+      "language": "zh-CN",
+      "kind": "network_slang",
+      "template_family": "cn-abstract",
+      "suitability": "adapt",
+      "categories": [
+        "hotword",
+        "meme",
+        "slang"
+      ],
+      "recent_evidence_date": "2024-12-12",
+      "social_functions": [
+        "reply"
+      ]
+    },
+    {
+      "id": "cn-city",
+      "title": "City不City",
+      "year": 2024,
+      "decade": "2020s",
+      "language": "zh-CN",
+      "kind": "phrase_template",
+      "template_family": "cn-city",
+      "suitability": "adapt",
+      "categories": [
+        "hotword",
+        "meme"
+      ],
+      "recent_evidence_date": "2024-12-12",
+      "social_functions": [
+        "reply"
+      ]
+    },
+    {
+      "id": "cn-freshly",
+      "title": "水灵灵地××",
+      "year": 2024,
+      "decade": "2020s",
+      "language": "zh-CN",
+      "kind": "phrase_template",
+      "template_family": "cn-freshly",
+      "suitability": "adapt",
+      "categories": [
+        "hotword",
+        "meme"
+      ],
+      "recent_evidence_date": "2024-12-12",
+      "social_functions": [
+        "self_mock"
+      ]
+    },
+    {
+      "id": "cn-intense-calm",
+      "title": "浓人淡人",
+      "year": 2024,
+      "decade": "2020s",
+      "language": "zh-CN",
+      "kind": "network_slang",
+      "template_family": "cn-intense-calm",
+      "suitability": "adapt",
+      "categories": [
+        "hotword",
+        "slang"
+      ],
+      "recent_evidence_date": "2024-12-12",
+      "social_functions": [
+        "bond"
+      ]
+    },
+    {
+      "id": "cn-jie",
+      "title": "接",
+      "year": 2024,
+      "decade": "2020s",
+      "language": "zh-CN",
+      "kind": "network_slang",
+      "template_family": "cn-jie",
+      "suitability": "adapt",
+      "categories": [
+        "hotword",
+        "slang"
+      ],
+      "recent_evidence_date": "2024-12-12",
+      "social_functions": [
+        "reply"
+      ]
+    },
+    {
+      "id": "cn-overheated",
+      "title": "红温",
+      "year": 2024,
+      "decade": "2020s",
+      "language": "zh-CN",
+      "kind": "network_slang",
+      "template_family": "cn-overheated",
+      "suitability": "adapt",
+      "categories": [
+        "hotword",
+        "slang"
+      ],
+      "recent_evidence_date": "2024-12-12",
+      "social_functions": [
+        "self_mock"
+      ]
+    },
+    {
+      "id": "cn-so-what",
+      "title": "那咋了",
+      "year": 2024,
+      "decade": "2020s",
+      "language": "zh-CN",
+      "kind": "phrase_template",
+      "template_family": "cn-so-what",
+      "suitability": "adapt",
+      "categories": [
+        "hotword",
+        "meme"
+      ],
+      "recent_evidence_date": "2024-12-12",
+      "social_functions": [
+        "reply",
+        "stance"
+      ]
+    },
+    {
+      "id": "cn-stealth-vibe",
+      "title": "偷感（很重）",
+      "year": 2024,
+      "decade": "2020s",
+      "language": "zh-CN",
+      "kind": "network_slang",
+      "template_family": "cn-stealth-vibe",
+      "suitability": "adapt",
+      "categories": [
+        "hotword",
+        "slang"
+      ],
+      "recent_evidence_date": "2024-12-12",
+      "social_functions": [
+        "self_mock"
+      ]
+    },
+    {
+      "id": "cn-value-rises",
+      "title": "含金量还在上升",
+      "year": 2024,
+      "decade": "2020s",
+      "language": "zh-CN",
+      "kind": "phrase_template",
+      "template_family": "cn-value-rises",
+      "suitability": "adapt",
+      "categories": [
+        "hotword",
+        "meme"
+      ],
+      "recent_evidence_date": "2024-12-12",
+      "social_functions": [
+        "praise",
+        "rating"
+      ]
+    },
+    {
+      "id": "cn-you-excel",
+      "title": "偏偏你最争气",
+      "year": 2024,
+      "decade": "2020s",
+      "language": "zh-CN",
+      "kind": "phrase_template",
+      "template_family": "cn-you-excel",
+      "suitability": "adapt",
+      "categories": [
+        "hotword",
+        "meme"
+      ],
+      "recent_evidence_date": "2024-12-12",
+      "social_functions": [
+        "praise"
+      ]
+    },
+    {
+      "id": "cn-hard-control",
+      "title": "硬控",
+      "year": 2024,
+      "decade": "2020s",
+      "language": "zh-CN",
+      "kind": "network_slang",
+      "template_family": "cn-hard-control",
+      "suitability": "adapt",
+      "categories": [
+        "hotword",
+        "slang"
+      ],
+      "recent_evidence_date": "2024-12-02",
+      "social_functions": [
+        "self_mock"
+      ]
+    },
+    {
+      "id": "cn-work-smell",
+      "title": "班味",
+      "year": 2024,
+      "decade": "2020s",
+      "language": "zh-CN",
+      "kind": "network_slang",
+      "template_family": "cn-work-smell",
+      "suitability": "adapt",
+      "categories": [
+        "hotword",
+        "slang"
+      ],
+      "recent_evidence_date": null,
+      "social_functions": [
+        "bond",
+        "jargon"
+      ]
+    },
+    {
+      "id": "cn-young-master",
+      "title": "小孩哥/小孩姐",
+      "year": 2024,
+      "decade": "2020s",
+      "language": "zh-CN",
+      "kind": "network_slang",
+      "template_family": "cn-young-master",
+      "suitability": "adapt",
+      "categories": [
+        "hotword",
+        "slang"
+      ],
+      "recent_evidence_date": null,
+      "social_functions": [
+        "praise"
+      ]
+    },
+    {
+      "id": "cn-mainly",
+      "title": "主打一个××",
+      "year": 2023,
+      "decade": "2020s",
+      "language": "zh-CN",
+      "kind": "phrase_template",
+      "template_family": "cn-mainly",
+      "suitability": "adapt",
+      "categories": [
+        "meme",
+        "hotword"
+      ],
+      "recent_evidence_date": null,
+      "social_functions": [
+        "self_mock"
+      ]
+    },
+    {
+      "id": "cn-showy",
+      "title": "显眼包",
+      "year": 2023,
+      "decade": "2020s",
+      "language": "zh-CN",
+      "kind": "network_slang",
+      "template_family": "cn-showy",
+      "suitability": "adapt",
+      "categories": [
+        "hotword",
+        "slang"
+      ],
+      "recent_evidence_date": null,
+      "social_functions": [
+        "tease"
+      ]
+    },
+    {
+      "id": "cn-digital-pickle",
+      "title": "电子榨菜",
+      "year": 2022,
+      "decade": "2020s",
+      "language": "zh-CN",
+      "kind": "network_slang",
+      "template_family": "cn-digital-pickle",
+      "suitability": "adapt",
+      "categories": [
+        "hotword",
+        "slang"
+      ],
+      "recent_evidence_date": null,
+      "social_functions": [
+        "bond"
+      ]
+    },
+    {
+      "id": "cn-defense-broken",
+      "title": "破防",
+      "year": 2021,
+      "decade": "2020s",
+      "language": "zh-CN",
+      "kind": "network_slang",
+      "template_family": "cn-defense-broken",
+      "suitability": "adapt",
+      "categories": [
+        "hotword",
+        "slang"
+      ],
+      "recent_evidence_date": null,
+      "social_functions": [
+        "self_mock"
+      ]
+    },
+    {
+      "id": "cn-shocked",
+      "title": "我看不懂，但我大受震撼",
+      "year": 2021,
+      "decade": "2020s",
+      "language": "zh-CN",
+      "kind": "phrase_template",
+      "template_family": "cn-shocked",
+      "suitability": "adapt",
+      "categories": [
+        "meme",
+        "hotword"
+      ],
+      "recent_evidence_date": null,
+      "social_functions": [
+        "reply"
+      ]
+    },
+    {
+      "id": "cn-yyds",
+      "title": "YYDS",
+      "year": 2021,
+      "decade": "2020s",
+      "language": "zh-CN",
+      "kind": "network_slang",
+      "template_family": "cn-yyds",
+      "suitability": "adapt",
+      "categories": [
+        "hotword",
+        "slang"
+      ],
+      "recent_evidence_date": null,
+      "social_functions": [
+        "praise"
+      ]
+    },
+    {
+      "id": "cn-worker",
+      "title": "打工人",
+      "year": 2020,
+      "decade": "2020s",
+      "language": "zh-CN",
+      "kind": "network_slang",
+      "template_family": "cn-worker",
+      "suitability": "adapt",
+      "categories": [
+        "hotword",
+        "slang"
+      ],
+      "recent_evidence_date": null,
+      "social_functions": [
+        "bond"
+      ]
+    },
+    {
+      "id": "cn-lemon",
+      "title": "柠檬精",
+      "year": 2019,
+      "decade": "2010s",
+      "language": "zh-CN",
+      "kind": "network_slang",
+      "template_family": "cn-lemon",
+      "suitability": "adapt",
+      "categories": [
+        "hotword",
+        "slang"
+      ],
+      "recent_evidence_date": null,
+      "social_functions": [
+        "self_mock"
+      ]
+    },
+    {
+      "id": "cn-earthy-lines",
+      "title": "土味情话",
+      "year": 2018,
+      "decade": "2010s",
+      "language": "zh-CN",
+      "kind": "phrase_template",
+      "template_family": "cn-earthy-lines",
+      "suitability": "adapt",
+      "categories": [
+        "meme",
+        "hotword"
+      ],
+      "recent_evidence_date": null,
+      "social_functions": [
+        "tease"
+      ]
+    },
+    {
+      "id": "cn-playful",
+      "title": "皮一下",
+      "year": 2018,
+      "decade": "2010s",
+      "language": "zh-CN",
+      "kind": "network_slang",
+      "template_family": "cn-playful",
+      "suitability": "adapt",
+      "categories": [
+        "hotword",
+        "slang"
+      ],
+      "recent_evidence_date": null,
+      "social_functions": [
+        "self_mock"
+      ]
+    },
+    {
+      "id": "cn-another-operation",
+      "title": "还有这种操作",
+      "year": 2017,
+      "decade": "2010s",
+      "language": "zh-CN",
+      "kind": "phrase_template",
+      "template_family": "cn-another-operation",
+      "suitability": "adapt",
+      "categories": [
+        "meme",
+        "hotword"
+      ],
+      "recent_evidence_date": null,
+      "social_functions": [
+        "reply"
+      ]
+    },
+    {
+      "id": "cn-call",
+      "title": "打call",
+      "year": 2017,
+      "decade": "2010s",
+      "language": "zh-CN",
+      "kind": "network_slang",
+      "template_family": "cn-call",
+      "suitability": "adapt",
+      "categories": [
+        "hotword",
+        "slang"
+      ],
+      "recent_evidence_date": null,
+      "social_functions": [
+        "praise"
+      ]
+    },
+    {
+      "id": "cn-surprise",
+      "title": "惊不惊喜，意不意外",
+      "year": 2017,
+      "decade": "2010s",
+      "language": "zh-CN",
+      "kind": "phrase_template",
+      "template_family": "cn-surprise",
+      "suitability": "adapt",
+      "categories": [
+        "meme",
+        "hotword"
+      ],
+      "recent_evidence_date": null,
+      "social_functions": [
+        "tease"
+      ]
+    },
+    {
+      "id": "cn-friendship-boat",
+      "title": "友谊的小船",
+      "year": 2016,
+      "decade": "2010s",
+      "language": "zh-CN",
+      "kind": "phrase_template",
+      "template_family": "friendship-boat",
+      "suitability": "adapt",
+      "categories": [
+        "meme",
+        "hotword"
+      ],
+      "recent_evidence_date": null,
+      "social_functions": [
+        "tease"
+      ]
+    },
+    {
+      "id": "cn-melon-spectator",
+      "title": "吃瓜群众",
+      "year": 2016,
+      "decade": "2010s",
+      "language": "zh-CN",
+      "kind": "network_slang",
+      "template_family": "cn-melon-spectator",
+      "suitability": "adapt",
+      "categories": [
+        "hotword",
+        "slang"
+      ],
+      "recent_evidence_date": null,
+      "social_functions": [
+        "self_mock"
+      ]
+    },
+    {
+      "id": "cn-prehistoric-power",
+      "title": "洪荒之力",
+      "year": 2016,
+      "decade": "2010s",
+      "language": "zh-CN",
+      "kind": "network_slang",
+      "template_family": "cn-prehistoric-power",
+      "suitability": "adapt",
+      "categories": [
+        "hotword",
+        "slang"
+      ],
+      "recent_evidence_date": null,
+      "social_functions": [
+        "self_mock"
+      ]
+    },
+    {
+      "id": "cn-quiet",
+      "title": "我想静静",
+      "year": 2015,
+      "decade": "2010s",
+      "language": "zh-CN",
+      "kind": "phrase_template",
+      "template_family": "cn-quiet",
+      "suitability": "adapt",
+      "categories": [
+        "meme",
+        "hotword"
+      ],
+      "recent_evidence_date": null,
+      "social_functions": [
+        "self_mock"
+      ]
+    },
+    {
+      "id": "cn-repeat-three",
+      "title": "重要的事情说三遍",
+      "year": 2015,
+      "decade": "2010s",
+      "language": "zh-CN",
+      "kind": "phrase_template",
+      "template_family": "cn-repeat-three",
+      "suitability": "adapt",
+      "categories": [
+        "meme",
+        "hotword"
+      ],
+      "recent_evidence_date": null,
+      "social_functions": [
+        "bond"
+      ]
+    },
+    {
+      "id": "cn-talent",
+      "title": "明明可以靠脸吃饭，却偏偏要靠才华",
+      "year": 2015,
+      "decade": "2010s",
+      "language": "zh-CN",
+      "kind": "phrase_template",
+      "template_family": "cn-talent",
+      "suitability": "adapt",
+      "categories": [
+        "meme",
+        "hotword"
+      ],
+      "recent_evidence_date": null,
+      "social_functions": [
+        "praise"
+      ]
+    },
+    {
+      "id": "cn-geli",
+      "title": "给力",
+      "year": 2010,
+      "decade": "2010s",
+      "language": "zh-CN",
+      "kind": "network_slang",
+      "template_family": "cn-geli",
+      "suitability": "adapt",
+      "categories": [
+        "hotword",
+        "slang"
+      ],
+      "recent_evidence_date": null,
+      "social_functions": [
+        "praise"
+      ]
+    },
+    {
+      "id": "cn-jia-dinner",
+      "title": "贾君鹏，你妈妈喊你回家吃饭",
+      "year": 2009,
+      "decade": "2000s",
+      "language": "zh-CN",
+      "kind": "phrase_template",
+      "template_family": "cn-jia-dinner",
+      "suitability": "adapt",
+      "categories": [
+        "meme",
+        "hotword"
+      ],
+      "recent_evidence_date": null,
+      "social_functions": [
+        "tease"
+      ]
+    },
+    {
+      "id": "cn-bump",
+      "title": "顶",
+      "year": 2004,
+      "decade": "2000s",
+      "language": "zh-CN",
+      "kind": "network_slang",
+      "template_family": "cn-bump",
+      "suitability": "adapt",
+      "categories": [
+        "hotword",
+        "slang"
+      ],
+      "recent_evidence_date": null,
+      "social_functions": [
+        "reply"
+      ]
+    },
+    {
+      "id": "cn-diving",
+      "title": "潜水",
+      "year": 2004,
+      "decade": "2000s",
+      "language": "zh-CN",
+      "kind": "network_slang",
+      "template_family": "cn-diving",
+      "suitability": "adapt",
+      "categories": [
+        "hotword",
+        "slang"
+      ],
+      "recent_evidence_date": null,
+      "social_functions": [
+        "self_mock"
+      ]
+    },
+    {
+      "id": "cn-sofa",
+      "title": "沙发",
+      "year": 2004,
+      "decade": "2000s",
+      "language": "zh-CN",
+      "kind": "network_slang",
+      "template_family": "cn-sofa",
+      "suitability": "adapt",
+      "categories": [
+        "hotword",
+        "slang"
+      ],
+      "recent_evidence_date": null,
+      "social_functions": [
+        "reply"
+      ]
+    },
+    {
+      "id": "cn-wo-xihuan",
+      "title": "偶稀饭",
+      "year": 2004,
+      "decade": "2000s",
+      "language": "zh-CN",
+      "kind": "network_slang",
+      "template_family": "cn-wo-xihuan",
+      "suitability": "adapt",
+      "categories": [
+        "hotword",
+        "slang"
+      ],
+      "recent_evidence_date": null,
+      "social_functions": [
+        "tease"
+      ]
+    }
+  ]
+}

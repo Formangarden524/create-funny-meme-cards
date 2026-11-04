@@ -1,0 +1,35 @@
+{
+  "schema_version": "0.4.0-preview",
+  "title": "夸损有梗：中文社交趣味表达库",
+  "prepared_on": "2026-11-05",
+  "stage": "steps_1_2_preview",
+  "author": {
+    "name": "秋哥",
+    "repository_url": "https://github.com/Formangarden524/create-funny-meme-cards",
+    "attribution_status": "MIT_project_originals_third_party_rights_separate"
+  },
+  "scope_notes": [
+    "以趣味、表达力与分享价值选材：评价排名、态度表达、黑话趣玩、接话调侃、自嘲夸人和共鸣均可；每条给具体用法，对话接法可选。例句为编辑自拟，未做受众实测。",
+    "轻松幽默、好玩有意思，适合聊天、自嘲、熟人调侃和漫画",
+    "中文优先；英文仅在有中国大陆流行证据时补充。知识性术语和海外独热资料保留复审，不进入默认知识包。",
+    "优先收集2024—2026年的网络热词、梗、黑话与俚语，历史资料保留作补充。",
+    "按最近有据收录/讨论时间倒序；此时间不是首次出现或热度排名。",
+    "类别可交叉；同一表达的常见变体放别名，避免冒充多个新梗。",
+    "各来源的年度评选、词典收录和社区月度投票分别标注，不等同全网喜爱率。",
+    "不分发第三方图片、音视频或私人使用历史。"
+  ],
+  "chronology_context": [
+    {
+      "year": 1969,
+      "event": "ARPANET早期四节点网络",
+      "is_meme": false,
+      "source": "https://www.internetsociety.org/internet/history-internet/brief-history-internet/"
+    },
+    {
+      "year": 1994,
+      "event": "中国于4月20日实现与Internet的全功能连接",
+      "is_meme": false,
+      "source": "https://www3.cnnic.cn/n4/2022/0401/c87-912.html"
+    }
+  ]
+}

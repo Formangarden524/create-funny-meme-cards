@@ -1,0 +1,77 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0-preview"
+    },
+    "event_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "kind": {
+      "enum": [
+        "variant_created",
+        "output_created",
+        "feedback_added",
+        "output_revised"
+      ]
+    },
+    "occurred_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "entry_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "variant_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "output_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "parent_event_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "reuse_mode": {
+      "enum": [
+        "new_text",
+        "strict_new",
+        "allow_classics",
+        "adapt",
+        "revise"
+      ]
+    },
+    "payload": {
+      "type": "object",
+      "minProperties": 1
+    }
+  },
+  "required": [
+    "schema_version",
+    "event_id",
+    "kind",
+    "occurred_at",
+    "entry_id",
+    "variant_id",
+    "output_id",
+    "parent_event_id",
+    "reuse_mode",
+    "payload"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "个人运行事件外形草案",
+  "description": "只验证外形。各kind的payload语义和跨事件引用必须在第3步进一步实现；本阶段无真实使用事件。"
+}

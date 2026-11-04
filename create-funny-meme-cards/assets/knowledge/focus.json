@@ -1,0 +1,74 @@
+{
+  "priority_years": [
+    2026,
+    2025,
+    2024
+  ],
+  "as_of": "2026-11-05",
+  "default_view": "recent",
+  "sort": "evidence_date_desc",
+  "categories": {
+    "hotword": "好玩热词",
+    "meme": "梗",
+    "slang": "趣味黑话／俚语"
+  },
+  "default_language": "cn",
+  "market": "中国大陆",
+  "editorial_goal": "中文优先的趣味社交表达：有意思、有表达力、值得使用或分享；接话只是其中一种用途",
+  "english_policy": "仅补充有中国大陆实际使用与传播证据的英文表达；海外热度不足以入选",
+  "admission_criteria": [
+    "能用于评价、表达态度、玩黑话、接话、调侃、自嘲、夸人或分享共鸣中的一种，不要求每条都形成对话",
+    "有明确笑点或趣味用法",
+    "适合中文生活语境",
+    "来源支持实际含义与传播范围",
+    "纯知识术语与海外独热表达不进主库"
+  ],
+  "social_functions": {
+    "reply": "接话",
+    "tease": "熟人调侃",
+    "self_mock": "自嘲",
+    "praise": "夸人",
+    "bond": "共鸣与拉近关系",
+    "rating": "评价与排名",
+    "stance": "表达态度",
+    "jargon": "黑话趣玩"
+  },
+  "user_endorsed_topic_anchors": [
+    {
+      "title": "从夯到拉",
+      "entry_id": "cn-hang-to-la",
+      "note": "用户明确点名，已核查建条目；实际展示状态随主库、复审或回收站变化。"
+    },
+    {
+      "title": "拿大结果",
+      "entry_id": "cn-big-result",
+      "note": "用户明确点名，已核查建条目；实际展示状态随主库、复审或回收站变化。"
+    },
+    {
+      "title": "喝大水",
+      "entry_id": "cn-big-water",
+      "note": "用户明确点名，已核查建条目；实际展示状态随主库、复审或回收站变化。"
+    }
+  ],
+  "collection_method": "年度词榜打底＋当期玩法与成组表达检索＋用户点名优先核查；命中新闻线索后必须继续跟进具体表达与趣味用法。",
+  "priority_topic_status": [
+    {
+      "title": "从夯到拉",
+      "entry_id": "cn-hang-to-la",
+      "note": "用户明确点名，已核查建条目；实际展示状态随主库、复审或回收站变化。",
+      "state": "include"
+    },
+    {
+      "title": "拿大结果",
+      "entry_id": "cn-big-result",
+      "note": "用户明确点名，已核查建条目；实际展示状态随主库、复审或回收站变化。",
+      "state": "include"
+    },
+    {
+      "title": "喝大水",
+      "entry_id": "cn-big-water",
+      "note": "用户明确点名，已核查建条目；实际展示状态随主库、复审或回收站变化。",
+      "state": "include"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+---
+id: cn-deepseek-name
+title: DeepSeek（深度求索）
+aliases: []
+kind: technical_term
+language: zh-CN
+culture_scope: 中国大陆网络
+template_family: cn-deepseek-name
+review_status: source_checked
+reference_year: 2025
+decade: 2020s
+grouping_reason: 2025年的收录、传播或讨论节点；不是首创时间。
+original_work_date: null
+documented_event_date: null
+popularized_date: null
+origin_status: not_fully_verified
+suitability: adapt
+source_ids:
+- source-029
+tags:
+- 夸损有梗
+- 近期表达
+- '2025'
+focus_categories:
+- hotword
+recent_evidence_date: '2025-12-12'
+---
+
+# DeepSeek（深度求索）
+
+## 含义
+
+在2025年度网络语言资料中受到关注的中国AI模型及应用品牌名称。
+
+## 关注依据
+
+来源的年度收录或当期讨论；不是逐词喜爱率排名。
+
+## 笑点机制
+
+语境转换
+
+## 漫画构思
+
+以自绘角色和具体生活场景解释“DeepSeek（深度求索）”，不复制来源媒体。
+
+## 使用场景
+
+- 网络表达理解
+- 朋友交流或内容创作，按具体语境选择
+
+## 使用提示
+
+- 这里只说明语言与品牌名称，不提供产品规格、性能或安全结论。
+
+## 证据支持范围
+
+### source-029
+
+支持本条释义及相应时段收录/讨论；不证明全球热度或唯一首创。
+
+## 来源导航
+
+- [source-029](../来源/source-029.md)
+
+[返回知识库首页](../首页.md)

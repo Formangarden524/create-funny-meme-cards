@@ -1,0 +1,22 @@
+{
+  "status": "example_not_executed",
+  "request": "找6条适合朋友聊天的经典表达，优先2000年代与2010年代，不生成图片。",
+  "constraints": {
+    "count": 6,
+    "time_mode": "historical",
+    "decades": [
+      "2000s",
+      "2010s"
+    ],
+    "reuse_mode": "allow_classics",
+    "output_mode": "copy_and_storyboard",
+    "brand_enabled": false
+  },
+  "expected_delivery": [
+    "文案及父条目ID",
+    "年代与来源说明",
+    "每句一个场景与漫画构思",
+    "当前热度未测量说明"
+  ],
+  "expected_side_effects": []
+}

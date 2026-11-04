@@ -1,0 +1,48 @@
+{
+  "stage": "local_pwa_preview",
+  "date": "2026-11-05",
+  "record_count": 57,
+  "source_count": 23,
+  "decade_counts": {
+    "2020s": 39,
+    "2010s": 13,
+    "2000s": 5
+  },
+  "language_counts": {
+    "zh-CN": 57
+  },
+  "completed": [
+    "独立公开版结构",
+    "Obsidian笔记主本与可重复导出",
+    "中文趣味表达初筛与复审隔离",
+    "来源与局限记录",
+    "近期优先和倒序浏览",
+    "三种单张风格与信息图合集的宿主生图流程及实际样张",
+    "昵称辅助和二维码本地生成/校验/合成/PNG导出",
+    "个人品牌与作者出处独立配置",
+    "本地查询更新与Obsidian收件箱",
+    "条目编辑、回收站与版本恢复",
+    "PWA安装入口、统一导航与公开资源离线缓存"
+  ],
+  "not_implemented": [
+    "历史写入/语义查重脚本",
+    "跨设备同步与定时任务",
+    "网页内模型API直连",
+    "个人配置导入与持久化",
+    "平台站内热榜适配、实时热度与候选自动审核收录"
+  ],
+  "release_status": "v0.1.0公开PWA预览；用户确认Mac Chrome安装可用；离线与数据维护已自测；公网网站和自动同步未配置",
+  "obsidian_authoring": "knowledge_markdown_is_authoritative",
+  "recent_record_count": 32,
+  "recent_year_counts": {
+    "2026": 5,
+    "2025": 14,
+    "2024": 13
+  },
+  "category_counts": {
+    "好玩热词": 57,
+    "梗": 34,
+    "趣味黑话／俚语": 32
+  },
+  "sort": "recent_evidence_date_desc"
+}

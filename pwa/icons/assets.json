@@ -1,0 +1,9 @@
+{
+  "origin": "项目原创SVG图形，经本机Quick Look渲染和sips缩放；非私人二维码或第三方素材",
+  "files": {
+    "icon.svg": "0339347c0f6f328db538b43d4f7821b4b33e9bfd585f390b20da3fea984bafd5",
+    "icon-192.png": "9d621fcec0c159bb361ae6f0d18b145ab18f6dd40ed5d3410ea29c8604f63dad",
+    "icon-512.png": "c3a82f65d539f20109597747014fcd23ff9c1d5ce55ef1625ad1b9fbd305df1c",
+    "apple-touch-icon.png": "69128341934d40bb2418586348bbf0b78e1df6579be7f624ae6d2531e7849677"
+  }
+}

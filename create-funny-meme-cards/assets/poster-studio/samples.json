@@ -1,0 +1,34 @@
+{
+  "prepared_on": "2026-11-05",
+  "tool": "image_gen.imagegen",
+  "model_version": "not_reported_by_tool",
+  "private_brand_included": false,
+  "samples": [
+    {
+      "id": "comic",
+      "path": "samples/comic.png",
+      "sha256": "145d6178300124ca058a95b897dde02f46e20d9706845baa12c7ebcb369f61bf",
+      "status": "generated_editorial_review_pending_user_acceptance"
+    },
+    {
+      "id": "pets",
+      "path": "samples/pets.png",
+      "sha256": "e245b0c3b92ab2f8e3498fdc18aeb1716bd1523c033384c08a8c5745dcc0ca3f",
+      "status": "generated_editorial_review_pending_user_acceptance"
+    },
+    {
+      "id": "retro",
+      "path": "samples/retro.png",
+      "sha256": "4ea115e81f4ed8c7da472018e782a1fc070c5756c49e9e555a248f5e4c4b3c1f",
+      "status": "generated_editorial_review_pending_user_acceptance"
+    },
+    {
+      "id": "collection",
+      "path": "samples/collection.png",
+      "sha256": "3065a790cf80420d8567e4ab40ca0c99d647ce513be44898a7a5d3f34c9d4fef",
+      "width": 1055,
+      "height": 1491,
+      "status": "generated_editorial_review_pending_user_acceptance"
+    }
+  ]
+}
