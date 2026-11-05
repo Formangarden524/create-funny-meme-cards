@@ -241,7 +241,7 @@ class Handler(BaseHTTPRequestHandler):
             if path == '/api/history': return self.respond({'versions':store.history(query.get('id',[''])[0])})
             if path == '/api/runs': return self.respond({'runs':store.runs()})
             if path.startswith('/api/'): return self.respond({'error':'接口不存在'},404)
-            relative = path.lstrip('/') or 'app.html'
+            relative = path.lstrip('/') or '预览.html'
             parts = Path(relative).parts
             if any(p.startswith('.') or p in {'私人','采集收件箱','private','runtime','outputs','__pycache__','tools','config'} for p in parts): return self.respond({'error':'此目录不公开服务'},403)
             target = (store.root / relative).resolve()

@@ -4,6 +4,37 @@
 
 **当前是 v0.1.0 PWA 开源预览版。** 已完成公开版结构、数据与配置约定，以及57条初筛趣味表达（其中近三年32条）；其余85条保留在复审区。已提供项目本地RSS查询、编辑与恢复；平台站内热榜接入与生成历史记忆留待后续实现；已增加三风格生图流程、本地品牌工坊与PWA基础版；已由用户在Mac上完成Chrome应用安装并确认可用。仓库：[Formangarden524/create-funny-meme-cards](https://github.com/Formangarden524/create-funny-meme-cards)。
 
+## 界面与成图效果
+
+打开应用直接进入资料首页，先看好玩的表达和用法；项目介绍集中在“项目说明”。所有页面共用“资料首页 / 海报工坊 / 资料维护 / 项目说明”导航。
+
+![资料首页：近期表达、搜索筛选和用法卡片](docs/screenshots/library.jpg)
+
+从资料卡片点击“用这个做海报”，可带入文案与画面构思，再返回原条目。以下是已有的AI生成风格样张；修改文案后需要重新生图，网页预览不会自动变图。
+
+| 反转漫画 | 萌宠吐槽 | 复古表情包 |
+| --- | --- | --- |
+| ![反转漫画：班味洗不掉](create-funny-meme-cards/assets/poster-studio/samples/comic.png) | ![萌宠吐槽：灵魂还在猫窝里](create-funny-meme-cards/assets/poster-studio/samples/pets.png) | ![复古表情包：今日最佳贡献](create-funny-meme-cards/assets/poster-studio/samples/retro.png) |
+
+**信息图合集：一张放8条段子，每条配一幅小漫画。** 点击图片可查看原图。
+
+<a href="create-funny-meme-cards/assets/poster-studio/samples/collection.png"><img src="create-funny-meme-cards/assets/poster-studio/samples/collection.png" alt="信息图合集：打工人嘴替，8句轻松自嘲" width="440"></a>
+
+<details>
+<summary>展开查看海报工坊与项目说明界面</summary>
+
+海报工坊：选风格、编辑文案与画面、准备生图任务、合成昵称和二维码。
+
+![海报工坊实际界面](docs/screenshots/poster-studio.jpg)
+
+项目说明：模块入口、安装方式和离线能力边界。
+
+![项目说明实际界面](docs/screenshots/project-about.jpg)
+
+</details>
+
+界面截图采集于2026-11-05，来自实际运行的本地网页，不是系统安装窗口截图；样张不含个人二维码。原图与采集信息见[截图清单](docs/screenshots/manifest.json)。
+
 ## 下载与启动
 
 在本仓库点击 **Code → Download ZIP**，解压整个项目。Mac需已安装Python 3，再双击“启动本地工作台.command”；首次启动需联网安装Python依赖。其他系统可使用终端：
@@ -20,11 +51,11 @@ python3 -m venv .venv
 
 ## 本地更新、编辑与恢复
 
-双击[启动本地工作台.command](启动本地工作台.command)，进入[应用首页](http://127.0.0.1:17861/app.html)，点击“维护”。可联网查询并标记新发现线索、编辑Markdown、删除到回收站、恢复条目或旧版本。底层数据保存在现有Obsidian知识库，成功修改后重建预览。查询是公开RSS检索，不等于实时平台热榜；线索需核查后正式收录。详见[使用说明](docs/本地维护工作台.md)。
+双击[启动本地工作台.command](启动本地工作台.command)，进入[应用首页](http://127.0.0.1:17861/)，点击“资料维护”。可联网查询并标记新发现线索、编辑Markdown、删除到回收站、恢复条目或旧版本。底层数据保存在现有Obsidian知识库，成功修改后重建预览。查询是公开RSS检索，不等于实时平台热榜；线索需核查后正式收录。详见[使用说明](docs/本地维护工作台.md)。
 
 ## PWA应用
 
-启动本地服务后，在系统浏览器打开[应用首页](http://127.0.0.1:17861/app.html)。首页、资料库、维护和创作使用统一导航；“安装 / 使用说明”提供浏览器安装指引。首次完成缓存后，即使本地服务停止，也可普通重开、浏览资料、制作海报并合成昵称与二维码；编辑与联网采集需要恢复服务。
+启动本地服务后，在系统浏览器打开[应用首页](http://127.0.0.1:17861/)。资料首页、海报工坊、资料维护和项目说明使用统一导航；“安装 / 使用说明”提供浏览器安装指引。首次完成缓存后，即使本地服务停止，也可普通重开、浏览资料、制作海报并合成昵称与二维码；编辑与联网采集需要恢复服务。
 
 当前是本机PWA预览，Mac安装已获用户确认；未部署公网网站，也未做手机同步。直接双击HTML的文件预览不会启用PWA。见[PWA使用与实测记录](docs/PWA使用与核查_20261105.md)。
 

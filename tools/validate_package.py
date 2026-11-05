@@ -97,8 +97,17 @@ def validate():
             size = 192 if name=='icon-192.png' else (512 if name=='icon-512.png' else 180)
             assert struct.unpack('>II',asset.read_bytes()[16:24]) == (size,size)
             approved_media[asset] = checksum
+    screenshots = json.loads((ROOT / 'docs/screenshots/manifest.json').read_text())
+    assert screenshots['private_content_included'] is False
+    assert screenshots['native_installed_window'] is False
+    for shot in screenshots['files']:
+        asset = ROOT / 'docs/screenshots' / shot['file']
+        assert asset.is_relative_to(ROOT / 'docs/screenshots')
+        assert hashlib.sha256(asset.read_bytes()).hexdigest() == shot['sha256'], 'Unreviewed screenshot: '+shot['file']
+        assert asset.read_bytes().startswith(b'\xff\xd8\xff'), 'Expected JPEG screenshot'
+        approved_media[asset] = shot['sha256']
     manifest = json.loads((ROOT / 'manifest.webmanifest').read_text())
-    assert manifest['display']=='standalone' and manifest['start_url']=='./app.html'
+    assert manifest['display']=='standalone' and manifest['start_url']=='./预览.html'
     shell = json.loads((ROOT / 'pwa-shell.json').read_text())
     assert shell['private_api_cached'] is False
     for name, checksum in shell['public_resources'].items():

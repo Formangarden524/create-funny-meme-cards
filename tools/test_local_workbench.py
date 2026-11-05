@@ -76,6 +76,9 @@ class WorkbenchTest(unittest.TestCase):
         def req(path,headers=None,data=None):
             return urlopen(Request(base+path,headers=headers or {},data=data),timeout=5)
         try:
+            with req('/') as r:self.assertIn('今天，来点有梗的。',r.read().decode())
+            with req('/manifest.webmanifest') as r:self.assertEqual(json.load(r)['start_url'],'./预览.html')
+            with req('/app.html?view=about') as r:self.assertIn('项目说明',r.read().decode())
             with req('/api/bootstrap') as r:token=json.load(r)['token']
             with self.assertRaises(HTTPError) as cm:req('/api/rebuild',{'Content-Type':'application/json'},b'{}')
             self.assertEqual(cm.exception.code,403);cm.exception.close()

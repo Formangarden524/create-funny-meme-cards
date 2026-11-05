@@ -6,7 +6,7 @@ const SCOPE=self.registration.scope;
 const PREFIX='meme-pwa:'+SCOPE+':';
 const CACHE=PREFIX+VERSION;
 const urls=new Set(RESOURCES.map(p=>new URL(p,SCOPE).href));
-const home=new URL('app.html',SCOPE).href;
+const home=new URL('预览.html',SCOPE).href;
 const fallback=new URL('offline.html',SCOPE).href;
 async function fromCache(key){return (await caches.open(CACHE)).match(key);}
 function cacheKey(request){if(request.method!=='GET')return null;const u=new URL(request.url);if(u.origin!==new URL(SCOPE).origin)return null;u.search='';u.hash='';if(u.href===SCOPE)return home;return urls.has(u.href)?u.href:null;}

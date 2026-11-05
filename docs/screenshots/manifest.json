@@ -1,0 +1,41 @@
+{
+  "captured_on": "2026-11-05",
+  "method": "actual_local_webpage_chrome_devtools",
+  "private_content_included": false,
+  "native_installed_window": false,
+  "files": [
+    {
+      "file": "library.jpg",
+      "label": "资料首页",
+      "page": "预览.html",
+      "sha256": "b316f8c5946d49b526915b596dfd0750aa9deb11dd74eeaa06731f2164104b14",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "device_pixel_ratio": 1
+      }
+    },
+    {
+      "file": "poster-studio.jpg",
+      "label": "海报工坊",
+      "page": "create-funny-meme-cards/assets/poster-studio/index.html?style=collection",
+      "sha256": "0b1c4864c86e0462f601934d4e17769df4766470786a684918ed9d7fd8b430be",
+      "viewport": {
+        "width": 1440,
+        "height": 1800,
+        "device_pixel_ratio": 1
+      }
+    },
+    {
+      "file": "project-about.jpg",
+      "label": "项目说明",
+      "page": "app.html?view=about",
+      "sha256": "0b5197464de1a74fafb2fbd1bb85f79338920d2660bc5620f217d7f507f6438f",
+      "viewport": {
+        "width": 1440,
+        "height": 1200,
+        "device_pixel_ratio": 1
+      }
+    }
+  ]
+}
