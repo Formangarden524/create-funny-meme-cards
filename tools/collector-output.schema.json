@@ -1,0 +1,126 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "coverage": {
+      "type": "string"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "meaning": {
+            "type": "string"
+          },
+          "line": {
+            "type": "string"
+          },
+          "scenario": {
+            "type": "string"
+          },
+          "humor": {
+            "type": "string"
+          },
+          "visual": {
+            "type": "string"
+          },
+          "avoid": {
+            "type": "string"
+          },
+          "evidence_date": {
+            "type": "string"
+          },
+          "source_url": {
+            "type": "string"
+          },
+          "source_title": {
+            "type": "string"
+          },
+          "source_support": {
+            "type": "string"
+          },
+          "source_limitations": {
+            "type": "string"
+          },
+          "categories": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "hotword",
+                "meme",
+                "slang"
+              ]
+            }
+          },
+          "functions": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "reply",
+                "tease",
+                "self_mock",
+                "praise",
+                "bond",
+                "rating",
+                "stance",
+                "jargon"
+              ]
+            }
+          },
+          "read_method": {
+            "type": "string",
+            "enum": [
+              "page_read"
+            ]
+          },
+          "id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "based_on_revision": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "revision_note": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "title",
+          "meaning",
+          "line",
+          "scenario",
+          "humor",
+          "visual",
+          "avoid",
+          "evidence_date",
+          "source_url",
+          "source_title",
+          "source_support",
+          "source_limitations",
+          "categories",
+          "functions",
+          "read_method",
+          "id",
+          "based_on_revision",
+          "revision_note"
+        ]
+      }
+    }
+  },
+  "required": [
+    "coverage",
+    "items"
+  ]
+}

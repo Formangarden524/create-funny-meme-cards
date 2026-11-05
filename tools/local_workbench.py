@@ -20,6 +20,10 @@ import threading
 import time
 import xml.etree.ElementTree as ET
 import webbrowser
+import sys
+
+# Lazy queue imports must share exception classes when the HTTP server runs as a script.
+if __name__ == '__main__': sys.modules['local_workbench'] = sys.modules[__name__]
 import yaml
 import build_from_obsidian as build
 
@@ -134,7 +138,7 @@ class Store:
                 raise
             if action == 'restore': trash.unlink(missing_ok=True)
             return self.entry(id)
-    def create(self, data):
+    def create(self, data, validate_only=False):
         if not isinstance(data, dict): raise ValueError('新增资料格式无效')
         def field(key, required=False, limit=2000):
             value=data.get(key, '')
@@ -169,6 +173,7 @@ class Store:
         support=field('source_support',include)
         limitation=field('source_limitations',include)
         if include and data.get('source_checked') is not True: raise ValueError('加入首页前，请确认已阅读来源、核对含义与中文趣味使用场景')
+        if validate_only: return True
         with self.lock:
             normalized=lambda v: re.sub(r'\s+','',v).casefold()
             for id, state in self.reviews()['entries'].items():
@@ -178,6 +183,7 @@ class Store:
             id='cn-user-'+secrets.token_hex(6)
             path=self.kb/'条目'/(id+'.md')
             old_review=self.review_path.read_text(encoding='utf-8');review=json.loads(old_review)
+            focus_path=self.kb/'收集范围.json';old_focus=focus_path.read_text();focus=json.loads(old_focus)
             source_ids=[];new_source=None;source_body=None
             if include:
                 for sp in (self.kb/'来源').glob('*.md'):
@@ -185,13 +191,13 @@ class Store:
                 if not source_ids:
                     sid='source-user-'+secrets.token_hex(6);source_ids=[sid]
                     new_source=self.kb/'来源'/(sid+'.md')
-                    source_body=note({'id':sid,'title':source_title,'url':source_url,'type':'secondary','published_date':None,'accessed_on':today.isoformat(),'read_method':'page_read','locator':None},'# '+source_title+'\n\n用户在新增表单中确认已阅读来源；程序未代为访问或核实原页。\n\n## 来源限制\n\n'+limitation+'\n\n[返回知识库首页](../首页.md)')
-            metadata={'id':id,'title':title,'aliases':[],'kind':'phrase_template','language':'zh-CN','culture_scope':'中国大陆中文生活语境（用户录入）','template_family':id,'review_status':'source_checked' if include else 'pending','reference_year':day.year,'decade':str(day.year//10*10)+'s','grouping_reason':'用户填写的有据讨论日期；不是首创日期。' if evidence_date else '草稿录入年份，尚未核实传播时间，不进入首页。','original_work_date':None,'documented_event_date':None,'popularized_date':None,'origin_status':'not_fully_verified','suitability':'adapt','source_ids':source_ids,'tags':['夸损有梗','手动新增'],'focus_categories':categories,'recent_evidence_date':evidence_date or None,'social_use':{'functions':functions,'audience':'中文生活社交用户；需结合具体对象与关系','trigger':scenario,'line':line,'follow_up':None,'avoid':avoid,'evidence_status':'editorial_example_not_audience_tested'}}
-            body='# '+title+'\n\n## 含义\n\n'+meaning+'\n\n## 关注依据\n\n用户手动录入'+('并确认已阅读来源；程序未另行核查。' if include else '，待复审核查；不显示在资料首页。')+'未测量实时热度。\n\n## 笑点机制\n\n'+humor+'\n\n## 漫画构思\n\n'+visual+'\n\n## 使用场景\n\n- '+scenario.replace('\n',' ')+'\n\n## 使用提示\n\n- '+avoid.replace('\n',' ')+'\n\n## 证据支持范围\n\n'
+                    source_body=note({'id':sid,'title':source_title,'url':source_url,'type':'secondary','published_date':None,'accessed_on':today.isoformat(),'read_method':'page_read','locator':None},'# '+source_title+'\n\n'+('AI采集任务声明已读取原页，经人工审核收录；未独立验证模型的事实判断。' if data.get('review_candidate_id') else '用户在新增表单中确认已阅读来源；程序未代为访问或核实原页。')+'\n\n## 来源限制\n\n'+limitation+'\n\n[返回知识库首页](../首页.md)')
+            metadata={'review_candidate_id':data.get('review_candidate_id'),'id':id,'title':title,'aliases':[],'kind':'phrase_template','language':'zh-CN','culture_scope':'中国大陆中文生活语境（用户录入）','template_family':id,'review_status':'source_checked' if include else 'pending','reference_year':day.year,'decade':str(day.year//10*10)+'s','grouping_reason':'审核采用的有据讨论日期；不是首创日期。' if evidence_date else '草稿录入年份，尚未核实传播时间，不进入首页。','original_work_date':None,'documented_event_date':None,'popularized_date':None,'origin_status':'not_fully_verified','suitability':'adapt','source_ids':source_ids,'tags':['夸损有梗','AI草稿审核通过' if data.get('review_candidate_id') else '手动新增'],'focus_categories':categories,'recent_evidence_date':evidence_date or None,'social_use':{'functions':functions,'audience':'中文生活社交用户；需结合具体对象与关系','trigger':scenario,'line':line,'follow_up':None,'avoid':avoid,'evidence_status':'editorial_example_not_audience_tested'}}
+            body='# '+title+'\n\n## 含义\n\n'+meaning+'\n\n## 关注依据\n\n'+('AI自动整理并经人工审核采用' if data.get('review_candidate_id') else '用户手动录入')+('，来源阅读及支持范围见来源笔记。' if include else '，待复审核查；不显示在资料首页。')+'未测量实时热度。\n\n## 笑点机制\n\n'+humor+'\n\n## 漫画构思\n\n'+visual+'\n\n## 使用场景\n\n- '+scenario.replace('\n',' ')+'\n\n## 使用提示\n\n- '+avoid.replace('\n',' ')+'\n\n## 证据支持范围\n\n'
             body+=('### '+source_ids[0]+'\n\n'+support) if source_ids else '待核查；草稿没有被视为已读来源条目。'
             if source_url: body+='\n\n## 待核或补充来源\n\n'+source_url+'\n\n'+source_title+'\n\n'+support+'\n\n'+limitation
             body+='\n\n[返回知识库首页](../首页.md)'
-            review['entries'][id]={'decision':decision,'reason':'用户手动录入并确认来源与趣味用途' if include else '手动新增草稿，等待来源与趣味语境复审','mainland_usage_evidence':[]}
+            review['entries'][id]={'decision':decision,'reason':('人工审核通过AI草稿与来源支持范围' if data.get('review_candidate_id') else '用户手动录入并确认来源与趣味用途') if include else '手动新增草稿，等待来源与趣味语境复审','mainland_usage_evidence':[]}
             created=[]
             try:
                 # Exclusive creation never overwrites a note or follows a preexisting symlink.
@@ -199,8 +205,11 @@ class Store:
                     with dest.open('x',encoding='utf-8') as out: out.write(raw)
                     created.append(dest)
                 atomic(self.review_path,encode(review))
+                if include and evidence_date>focus['as_of']:
+                    focus['as_of']=evidence_date;atomic(focus_path,encode(focus))
                 build.run(self.root)
             except Exception:
+                atomic(focus_path,old_focus)
                 for dest in created: dest.unlink(missing_ok=True)
                 atomic(self.review_path,old_review)
                 build.run(self.root)
@@ -311,6 +320,12 @@ class Handler(BaseHTTPRequestHandler):
             if path == '/api/entries': return self.respond({'entries':store.listing()})
             if path == '/api/entry': return self.respond(store.entry(query.get('id',[''])[0]))
             if path == '/api/history': return self.respond({'versions':store.history(query.get('id',[''])[0])})
+            if path == '/api/collect-status':
+                from auto_collect import Collector
+                return self.respond(Collector(store).status())
+            if path == '/api/review-inbox':
+                from review_inbox import ReviewInbox
+                return self.respond(ReviewInbox(store).listing())
             if path == '/api/runs': return self.respond({'runs':store.runs()})
             if path.startswith('/api/'): return self.respond({'error':'接口不存在'},404)
             relative = path.lstrip('/') or '预览.html'
@@ -337,6 +352,12 @@ class Handler(BaseHTTPRequestHandler):
             data = json.loads(self.rfile.read(length))
             path = urlsplit(self.path).path
             if path == '/api/search': result = self.server.store.search(data.get('query'))
+            elif path == '/api/collect-start':
+                from auto_collect import Collector
+                result = Collector(self.server.store).start(data.get('limit',5))
+            elif path == '/api/review-action':
+                from review_inbox import ReviewInbox
+                result = ReviewInbox(self.server.store).action(data)
             elif path == '/api/create': result = self.server.store.create(data)
             elif path == '/api/pending': result = self.server.store.pending(data.get('run_id'),data.get('candidate_id'))
             elif path in {'/api/edit','/api/delete','/api/restore','/api/restore-version'}:

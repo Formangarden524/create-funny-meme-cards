@@ -110,6 +110,10 @@ class WorkbenchTest(unittest.TestCase):
             with req('/manifest.webmanifest') as r:self.assertEqual(json.load(r)['start_url'],'./预览.html')
             with req('/app.html?view=about') as r:self.assertIn('项目说明',r.read().decode())
             with req('/api/bootstrap') as r:token=json.load(r)['token']
+            with req('/api/review-inbox') as r:self.assertIn('items',json.load(r))
+            with req('/api/collect-status') as r:self.assertIn('status',json.load(r))
+            with patch('auto_collect.Collector.start',return_value={'status':'running'}):
+                with req('/api/collect-start',{'Content-Type':'application/json','X-Workbench-Token':token},b'{"limit":2}') as r:self.assertEqual(json.load(r)['status'],'running')
             with self.assertRaises(HTTPError) as cm:req('/api/rebuild',{'Content-Type':'application/json'},b'{}')
             self.assertEqual(cm.exception.code,403);cm.exception.close()
             with self.assertRaises(HTTPError) as cm:req('/api/bootstrap',{'Origin':'https://example.com'})
