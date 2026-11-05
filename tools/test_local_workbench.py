@@ -70,6 +70,36 @@ class WorkbenchTest(unittest.TestCase):
         levels=next(r for r in pack['records'] if r['id']==e['id'])['ranking_levels']
         self.assertEqual([l['label'] for l in levels],['夯','顶级','人上人','NPC','拉（拉完了）'])
 
+    def test_manual_create_draft_checked_entry_and_rollback(self):
+        s=self.store
+        basic={'title':'新增测试草稿','meaning':'隔离副本里的趣味表达','line':'今天的脑子正在加载。','decision':'hold'}
+        draft=s.create(basic)
+        self.assertEqual(draft['decision'],'hold')
+        self.assertTrue((self.root/draft['path']).is_file())
+        self.assertNotIn(draft['id'],[r['id'] for r in __import__('build_from_obsidian').load_package(self.root)['records']])
+        with self.assertRaises(Conflict):s.create(basic)
+        invalid={**basic,'title':'新增不完整正式条目','decision':'include'}
+        before=s.review_path.read_text()
+        with self.assertRaises(ValueError):s.create(invalid)
+        self.assertEqual(before,s.review_path.read_text())
+        checked={**basic,'title':'新增测试正式条目','decision':'include','scenario':'朋友聊天时自嘲状态','humor':'把脑子当作加载中的网页','visual':'小人头顶一个进度条','evidence_date':'2026-11-05','source_url':'https://example.com/manual-create-test','source_title':'测试来源，仅用于隔离回归','source_support':'测试用字段，不是真实收录','source_limitations':'测试网址不代表真实传播证据','source_checked':True}
+        record=s.create(checked)
+        pack=__import__('build_from_obsidian').load_package(self.root)
+        self.assertIn(record['id'],[r['id'] for r in pack['records']])
+        self.assertEqual(len([x for x in pack['sources'] if x['url']==checked['source_url']]),1)
+        again=s.create({**checked,'title':'同来源另一测试表达'})
+        pack=__import__('build_from_obsidian').load_package(self.root)
+        self.assertEqual(len([x for x in pack['sources'] if x['url']==checked['source_url']]),1)
+        before_review=s.review_path.read_text();before_notes=set((self.root/'知识库/条目').glob('*.md'));before_sources=set((self.root/'知识库/来源').glob('*.md'))
+        with patch('local_workbench.build.outputs',side_effect=ValueError('模拟导出失败')):
+            with self.assertRaises(ValueError):s.create({**checked,'title':'导出失败测试','source_url':'https://example.com/rollback'})
+        self.assertEqual(before_review,s.review_path.read_text())
+        self.assertEqual(before_notes,set((self.root/'知识库/条目').glob('*.md')))
+        self.assertEqual(before_sources,set((self.root/'知识库/来源').glob('*.md')))
+        deleted=s.change('delete',record['id'],record['revision'])
+        restored=s.change('restore',record['id'],deleted['revision'])
+        self.assertEqual(restored['decision'],'include')
+
     def test_http_origin_token_and_private_files(self):
         server=make_server(self.root,0);thread=threading.Thread(target=server.serve_forever,daemon=True);thread.start()
         base=f'http://127.0.0.1:{server.server_port}'

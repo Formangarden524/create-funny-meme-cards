@@ -1,5 +1,5 @@
 {
-  "version": "a661c922af25bf09",
+  "version": "5fbdc155b48dda01",
   "public_resources": {
     "app.html": "1830dd30279ef4ddd4d06bdbd9125c3d243a320cb620bcd8fc277a3a5a52099d",
     "app.css": "cf3ea24dd7f4660e6a2397ae1b34ba4358c992fb1a92ba03fbaafee01835d590",
@@ -8,11 +8,11 @@
     "app-pwa.css": "cd71938016448e41f19789ba8c50568d11942491e639ba6ab0386d9fa11d1247",
     "offline.html": "e756dab2d83df79a165fd713e7dda85d61abe5ab0b580a3970e15e3cb29dcde8",
     "manifest.webmanifest": "5324d0f96ebdd5e3fcadd4c139f222c1a429f2bbfafe96a53c6c5400e8013bd1",
-    "预览.html": "b18256df2ba691be6d118c332b95842007b3209d18becf89bdecf29b72bfb32f",
+    "预览.html": "f9bb41fe291dc17e0354f00f056a45c5d634bc504021756781370fab3c397116",
     "preview.js": "e2211be632489e13791fc65412fb807aba3d9cbd82d2cedf313f42c123cde6f1",
-    "本地工作台.html": "fcd496e6df43b6e3ac2cf3daed868a6ce443df1d8cebcf8fbfd9ceb813d7b919",
-    "workbench.js": "8bf1a87e95bdd885fb5a19c2169635c7faf40486e1accf0b834986ac5e1a9ca5",
-    "workbench.css": "ec9041991be66821e4dbb9bfc463c284c211136b41ac0dc0e1d9a446981f65a8",
+    "本地工作台.html": "25146540ef3d9558bc25c14e7869090ca91c24a64e41abaead527ab9bcd764f3",
+    "workbench.js": "2ee822b89874605e76576ae8c9f8c76b9c1b5c8ccda5fa532eb1dd8dfee0bf44",
+    "workbench.css": "b1df93db28043582ceac7bee5bfa503a523d2c10882546a1e7a2c351c5c9fd94",
     "pwa/icons/icon.svg": "0339347c0f6f328db538b43d4f7821b4b33e9bfd585f390b20da3fea984bafd5",
     "pwa/icons/icon-192.png": "9d621fcec0c159bb361ae6f0d18b145ab18f6dd40ed5d3410ea29c8604f63dad",
     "pwa/icons/icon-512.png": "c3a82f65d539f20109597747014fcd23ff9c1d5ce55ef1625ad1b9fbd305df1c",

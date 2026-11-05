@@ -134,6 +134,78 @@ class Store:
                 raise
             if action == 'restore': trash.unlink(missing_ok=True)
             return self.entry(id)
+    def create(self, data):
+        if not isinstance(data, dict): raise ValueError('新增资料格式无效')
+        def field(key, required=False, limit=2000):
+            value=data.get(key, '')
+            if not isinstance(value, str) or len(value)>limit: raise ValueError('字段过长或格式无效：'+key)
+            value=value.strip()
+            if required and not value: raise ValueError('请填写：'+key)
+            if re.search(r'^#{1,3} |^---$',value,re.M): raise ValueError('表单里请填写普通文字，不要插入Markdown标题或属性分隔线')
+            return value
+        title=field('title',True,60);meaning=field('meaning',True);line=field('line',True,500)
+        decision=data.get('decision','hold')
+        if decision not in {'include','hold'}: raise ValueError('请选择复审草稿或加入首页')
+        include=decision=='include'
+        scenario=field('scenario',include,500) or '待补充具体使用场景'
+        humor=field('humor',include) or '待补充笑点分析'
+        visual=field('visual',include) or '待补充画面构思'
+        avoid=field('avoid',False,500) or '根据关系和语境适度使用；自拟用法不代表流行原句或受众验证。'
+        categories=data.get('categories',['meme']);functions=data.get('functions',['self_mock'])
+        if not isinstance(categories,list) or not categories or any(c not in {'hotword','meme','slang'} for c in categories): raise ValueError('请选择有效表达类别')
+        if not isinstance(functions,list) or not functions or any(f not in {'reply','tease','self_mock','praise','bond','rating','stance','jargon'} for f in functions): raise ValueError('请选择有效社交用途')
+        evidence_date=field('evidence_date',include,10)
+        today=datetime.now(TZ).date()
+        if evidence_date:
+            try: day=datetime.strptime(evidence_date,'%Y-%m-%d').date()
+            except ValueError: raise ValueError('日期请用YYYY-MM-DD')
+            if day>today or day.year<1960: raise ValueError('资料日期不能在未来，也不能早于1960年')
+        else: day=today
+        source_url=field('source_url',include,2000)
+        if source_url:
+            u=urlsplit(source_url)
+            if u.scheme not in {'http','https'} or not u.hostname or u.username or u.password: raise ValueError('来源网址须为无账号密码的完整http或https链接')
+        source_title=field('source_title',include,300)
+        support=field('source_support',include)
+        limitation=field('source_limitations',include)
+        if include and data.get('source_checked') is not True: raise ValueError('加入首页前，请确认已阅读来源、核对含义与中文趣味使用场景')
+        with self.lock:
+            normalized=lambda v: re.sub(r'\s+','',v).casefold()
+            for id, state in self.reviews()['entries'].items():
+                meta=props(self.entry_path(id))
+                if normalized(title) in [normalized(t) for t in [meta['title'],*meta.get('aliases',[])]]:
+                    raise Conflict('已有同名或别名条目“'+meta['title']+'”；请编辑原条目，或从回收站恢复。')
+            id='cn-user-'+secrets.token_hex(6)
+            path=self.kb/'条目'/(id+'.md')
+            old_review=self.review_path.read_text(encoding='utf-8');review=json.loads(old_review)
+            source_ids=[];new_source=None;source_body=None
+            if include:
+                for sp in (self.kb/'来源').glob('*.md'):
+                    if props(sp)['url']==source_url: source_ids=[sp.stem];break
+                if not source_ids:
+                    sid='source-user-'+secrets.token_hex(6);source_ids=[sid]
+                    new_source=self.kb/'来源'/(sid+'.md')
+                    source_body=note({'id':sid,'title':source_title,'url':source_url,'type':'secondary','published_date':None,'accessed_on':today.isoformat(),'read_method':'page_read','locator':None},'# '+source_title+'\n\n用户在新增表单中确认已阅读来源；程序未代为访问或核实原页。\n\n## 来源限制\n\n'+limitation+'\n\n[返回知识库首页](../首页.md)')
+            metadata={'id':id,'title':title,'aliases':[],'kind':'phrase_template','language':'zh-CN','culture_scope':'中国大陆中文生活语境（用户录入）','template_family':id,'review_status':'source_checked' if include else 'pending','reference_year':day.year,'decade':str(day.year//10*10)+'s','grouping_reason':'用户填写的有据讨论日期；不是首创日期。' if evidence_date else '草稿录入年份，尚未核实传播时间，不进入首页。','original_work_date':None,'documented_event_date':None,'popularized_date':None,'origin_status':'not_fully_verified','suitability':'adapt','source_ids':source_ids,'tags':['夸损有梗','手动新增'],'focus_categories':categories,'recent_evidence_date':evidence_date or None,'social_use':{'functions':functions,'audience':'中文生活社交用户；需结合具体对象与关系','trigger':scenario,'line':line,'follow_up':None,'avoid':avoid,'evidence_status':'editorial_example_not_audience_tested'}}
+            body='# '+title+'\n\n## 含义\n\n'+meaning+'\n\n## 关注依据\n\n用户手动录入'+('并确认已阅读来源；程序未另行核查。' if include else '，待复审核查；不显示在资料首页。')+'未测量实时热度。\n\n## 笑点机制\n\n'+humor+'\n\n## 漫画构思\n\n'+visual+'\n\n## 使用场景\n\n- '+scenario.replace('\n',' ')+'\n\n## 使用提示\n\n- '+avoid.replace('\n',' ')+'\n\n## 证据支持范围\n\n'
+            body+=('### '+source_ids[0]+'\n\n'+support) if source_ids else '待核查；草稿没有被视为已读来源条目。'
+            if source_url: body+='\n\n## 待核或补充来源\n\n'+source_url+'\n\n'+source_title+'\n\n'+support+'\n\n'+limitation
+            body+='\n\n[返回知识库首页](../首页.md)'
+            review['entries'][id]={'decision':decision,'reason':'用户手动录入并确认来源与趣味用途' if include else '手动新增草稿，等待来源与趣味语境复审','mainland_usage_evidence':[]}
+            created=[]
+            try:
+                # Exclusive creation never overwrites a note or follows a preexisting symlink.
+                for dest, raw in ([(new_source,source_body)] if new_source else [])+[(path,note(metadata,body))]:
+                    with dest.open('x',encoding='utf-8') as out: out.write(raw)
+                    created.append(dest)
+                atomic(self.review_path,encode(review))
+                build.run(self.root)
+            except Exception:
+                for dest in created: dest.unlink(missing_ok=True)
+                atomic(self.review_path,old_review)
+                build.run(self.root)
+                raise
+            return self.entry(id)
     def runs(self):
         with self.lock:
             return [props(p) for p in sorted((self.kb / '采集收件箱').glob('*.md'), reverse=True)][:30]
@@ -265,6 +337,7 @@ class Handler(BaseHTTPRequestHandler):
             data = json.loads(self.rfile.read(length))
             path = urlsplit(self.path).path
             if path == '/api/search': result = self.server.store.search(data.get('query'))
+            elif path == '/api/create': result = self.server.store.create(data)
             elif path == '/api/pending': result = self.server.store.pending(data.get('run_id'),data.get('candidate_id'))
             elif path in {'/api/edit','/api/delete','/api/restore','/api/restore-version'}:
                 result = self.server.store.change(path.removeprefix('/api/'), data.get('id'), data.get('revision'), markdown=data.get('markdown'), version=data.get('version'))
