@@ -711,6 +711,21 @@
       "decision": "include",
       "reason": "用户明确点名；已有实际读取的大陆使用证据，保留趣味改编，不强制接话。",
       "mainland_usage_evidence": []
+    },
+    "cn-user-4c06af2b5a95": {
+      "decision": "include",
+      "reason": "人工审核通过AI草稿与来源支持范围",
+      "mainland_usage_evidence": []
+    },
+    "cn-user-3ae4cc3dfeaf": {
+      "decision": "include",
+      "reason": "人工审核通过AI草稿与来源支持范围",
+      "mainland_usage_evidence": []
+    },
+    "cn-user-17028e9312f2": {
+      "decision": "include",
+      "reason": "人工审核通过AI草稿与来源支持范围",
+      "mainland_usage_evidence": []
     }
   }
 }

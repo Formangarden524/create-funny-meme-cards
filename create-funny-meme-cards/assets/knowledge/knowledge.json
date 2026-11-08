@@ -285,9 +285,235 @@
       "read_method": "page_read",
       "locator": "正文相关表达、传播语境与实际使用案例；source-048网页由curl读取原页，其余通过联网阅读工具读取",
       "limitations": "消费报道记录大陆短视频话题、二创和生活使用场景，并提及睡大觉、练薄肌；博主与日期归因为报道说法，未核查最早视频，不据此给健康建议。"
+    },
+    {
+      "id": "source-user-402e249fc0b3",
+      "title": "万圣节最拿的出手的创意，都在街上了",
+      "url": "https://www.digitaling.com/articles/1615564.html",
+      "type": "secondary",
+      "published_date": null,
+      "accessed_on": "2026-11-05",
+      "read_method": "page_read",
+      "locator": null,
+      "limitations": "属于媒体观察，未直接核验表情包原帖、最早出处及使用频率；文中关于热门程度的判断未独立证实。例句与画面为编辑自拟。\n\n[返回知识库首页](../首页.md)"
+    },
+    {
+      "id": "source-user-6b7fccf7469d",
+      "title": "人民日报微评热议“不烧心”走红：全网热梗呼唤的是什么",
+      "url": "https://www.thepaper.cn/newsDetail_forward_34398074",
+      "type": "secondary",
+      "published_date": null,
+      "accessed_on": "2026-11-05",
+      "read_method": "page_read",
+      "locator": null,
+      "limitations": "未直接观看短剧或核验首发账号；报道没有提供可独立核查的完整传播数据，不能据此确定首创时间、全网排名或实际食品品质。\n\n[返回知识库首页](../首页.md)"
+    },
+    {
+      "id": "source-user-af1ab0ef8a44",
+      "title": "“厉娜后缀”梗为何会火？心理学家：它体现了当代人对情感连接的渴望",
+      "url": "https://www.yzwb.net/news/wy/202611/t20261103_408875.html",
+      "type": "secondary",
+      "published_date": null,
+      "accessed_on": "2026-11-05",
+      "read_method": "page_read",
+      "locator": null,
+      "limitations": "未直接观看节目或打开芒果TV、微博原帖；不确认第一位仿写者、确切起源日期和报道所述热搜及阅读量。该句式存在真实关系情绪背景，不能只理解为嘲讽。\n\n[返回知识库首页](../首页.md)"
     }
   ],
   "records": [
+    {
+      "id": "cn-user-17028e9312f2",
+      "title": "背手负鼠",
+      "aliases": [],
+      "kind": "phrase_template",
+      "language": "zh-CN",
+      "culture_scope": "中国大陆中文生活语境（用户录入）",
+      "template_family": "cn-user-17028e9312f2",
+      "review_status": "source_checked",
+      "categories": [
+        "meme"
+      ],
+      "recent_evidence_date": "2026-11-03",
+      "attention_basis": "AI自动整理并经人工审核采用，来源阅读及支持范围见来源笔记。未测量实时热度。",
+      "social_use": {
+        "functions": [
+          "self_mock",
+          "bond"
+        ],
+        "audience": "中文生活社交用户；需结合具体对象与关系",
+        "trigger": "工作群又出现一轮重复讨论，自己暂时无须发言，向熟悉的同事发图自嘲。",
+        "line": "上午还想在会上大展身手，下午已经背起双手：这家公司暂时由我的沉默坐镇。",
+        "follow_up": null,
+        "avoid": "适合自嘲或熟人间共鸣；不要借此给真实同事贴消极怠工标签，也不要将疲惫状态写成心理诊断。",
+        "evidence_status": "editorial_example_not_audience_tested"
+      },
+      "dates": {
+        "reference_year": 2026,
+        "decade": "2020s",
+        "grouping_reason": "审核采用的有据讨论日期；不是首创日期。",
+        "original_work_date": null,
+        "documented_event_date": null,
+        "popularized_date": null,
+        "origin_status": "not_fully_verified"
+      },
+      "meaning": "以双手背在身后的负鼠形象，表现看透世事、疲惫又懒得多说的状态，常被用于打工人的无声自嘲。",
+      "editorial": {
+        "humor_mechanism": "小动物背手的姿态像巡视工作的老干部，与普通员工疲惫、无话可说的处境形成反差。",
+        "visual_idea": "原创三格漫画：上班时小负鼠举着计划书，中午计划书越叠越高，下班前它背手站在纸堆旁，头顶只剩一个省略号。",
+        "scenarios": [
+          "工作群又出现一轮重复讨论，自己暂时无须发言，向熟悉的同事发图自嘲。"
+        ],
+        "suitability": "adapt",
+        "is_editorial_interpretation": true
+      },
+      "evidence": [
+        {
+          "source_id": "source-user-402e249fc0b3",
+          "supports": "实际打开的正文将双手背在身后的负鼠列为打工人表情包，并描述其沧桑、看透世事的气质，以及在当年万圣节被装扮模仿的使用案例。"
+        }
+      ],
+      "popularity": {
+        "current_status": "not_measured",
+        "snapshots": []
+      },
+      "cautions": [
+        "适合自嘲或熟人间共鸣；不要借此给真实同事贴消极怠工标签，也不要将疲惫状态写成心理诊断。"
+      ],
+      "rights": {
+        "third_party_media_included": false,
+        "media_reuse_permission": "not_established",
+        "original_explanation_license": "MIT"
+      }
+    },
+    {
+      "id": "cn-user-3ae4cc3dfeaf",
+      "title": "不烧心",
+      "aliases": [],
+      "kind": "phrase_template",
+      "language": "zh-CN",
+      "culture_scope": "中国大陆中文生活语境（用户录入）",
+      "template_family": "cn-user-3ae4cc3dfeaf",
+      "review_status": "source_checked",
+      "categories": [
+        "meme",
+        "slang"
+      ],
+      "recent_evidence_date": "2026-11-03",
+      "attention_basis": "AI自动整理并经人工审核采用，来源阅读及支持范围见来源笔记。未测量实时热度。",
+      "social_use": {
+        "functions": [
+          "praise",
+          "rating"
+        ],
+        "audience": "中文生活社交用户；需结合具体对象与关系",
+        "trigger": "朋友聚餐结束，大家夸一位提前安排、主动结账又算账公平的饭搭子，用饮食评价的口吻夸他的为人。",
+        "line": "这位搭子约饭会提前订位，算账精确到自己多吃的那串，贵不贵另说，交往起来不烧心。",
+        "follow_up": null,
+        "avoid": "用于轻松表达个人信任体验；不能据此断言食品安全、治疗胃病或保证产品品质，也别借反话无证据指控具体商家坑人。",
+        "evidence_status": "editorial_example_not_audience_tested"
+      },
+      "dates": {
+        "reference_year": 2026,
+        "decade": "2020s",
+        "grouping_reason": "审核采用的有据讨论日期；不是首创日期。",
+        "original_work_date": null,
+        "documented_event_date": null,
+        "popularized_date": null,
+        "origin_status": "not_fully_verified"
+      },
+      "meaning": "从评价食物吃着舒服，延伸为夸人或事靠谱、守信、没有套路，让人安心；也能把郑重的信任评价说得像一道家常菜。",
+      "editorial": {
+        "humor_mechanism": "把原本属于胃部感受的评价挪到人际关系上，仿佛朋友也有一张食用体验报告，朴素又有反差。",
+        "visual_idea": "原创漫画：饭搭子拿着订位单和账单站在餐桌旁，朋友一本正经给他颁发菜单式评价卡，上写“靠谱足量，套路免放”，下方盖“不烧心”印章。",
+        "scenarios": [
+          "朋友聚餐结束，大家夸一位提前安排、主动结账又算账公平的饭搭子，用饮食评价的口吻夸他的为人。"
+        ],
+        "suitability": "adapt",
+        "is_editorial_interpretation": true
+      },
+      "evidence": [
+        {
+          "source_id": "source-user-6b7fccf7469d",
+          "supports": "实际打开的澎湃新闻页面署名@人民日报，明确介绍该说法的饮食短剧语境，并指出其已用于消费、职场等场景，泛指靠谱、守信、让人安心舒服，支持其含义及大陆实际使用。"
+        }
+      ],
+      "popularity": {
+        "current_status": "not_measured",
+        "snapshots": []
+      },
+      "cautions": [
+        "用于轻松表达个人信任体验；不能据此断言食品安全、治疗胃病或保证产品品质，也别借反话无证据指控具体商家坑人。"
+      ],
+      "rights": {
+        "third_party_media_included": false,
+        "media_reuse_permission": "not_established",
+        "original_explanation_license": "MIT"
+      }
+    },
+    {
+      "id": "cn-user-4c06af2b5a95",
+      "title": "厉娜后缀（××，厉娜）",
+      "aliases": [],
+      "kind": "phrase_template",
+      "language": "zh-CN",
+      "culture_scope": "中国大陆中文生活语境（用户录入）",
+      "template_family": "cn-user-4c06af2b5a95",
+      "review_status": "source_checked",
+      "categories": [
+        "meme"
+      ],
+      "recent_evidence_date": "2026-11-03",
+      "attention_basis": "AI自动整理并经人工审核采用，来源阅读及支持范围见来源笔记。未测量实时热度。",
+      "social_use": {
+        "functions": [
+          "self_mock",
+          "bond"
+        ],
+        "audience": "中文生活社交用户；需结合具体对象与关系",
+        "trigger": "网购后到驿站找包裹，面对满墙货架找了很久，回到朋友群里用戏剧化的语气抱怨这件小事。",
+        "line": "我只是下楼拿个快递，却在驿站翻出了人生的迷茫，厉娜。",
+        "follow_up": null,
+        "avoid": "适合熟人间自嘲和轻度抱怨；不要嘲笑当事人的真实情绪、编造明星关系内幕，也不要在他人认真倾诉时机械刷梗。",
+        "evidence_status": "editorial_example_not_audience_tested"
+      },
+      "dates": {
+        "reference_year": 2026,
+        "decade": "2020s",
+        "grouping_reason": "审核采用的有据讨论日期；不是首创日期。",
+        "original_work_date": null,
+        "documented_event_date": null,
+        "popularized_date": null,
+        "origin_status": "not_fully_verified"
+      },
+      "meaning": "在日常碎碎念末尾加上“厉娜”，模仿综艺对谈中句末呼唤名字的节奏，让普通小事突然带上深情、怅然或郑重报备的语气。",
+      "editorial": {
+        "humor_mechanism": "琐碎生活配上情绪浓重的句尾呼唤，产生“小事拍成苦情长片”的反差；名字像一个自带叹息的句号。",
+        "visual_idea": "原创三格漫画：人物轻快走进快递驿站，随后淹没在层层包裹货架间，最后站在聚光灯下捧着小包裹，远处一个巨大的“厉娜”充当句号。",
+        "scenarios": [
+          "网购后到驿站找包裹，面对满墙货架找了很久，回到朋友群里用戏剧化的语气抱怨这件小事。"
+        ],
+        "suitability": "adapt",
+        "is_editorial_interpretation": true
+      },
+      "evidence": [
+        {
+          "source_id": "source-user-af1ab0ef8a44",
+          "supports": "实际阅读扬子晚报/紫牛新闻记者报道：文章将句式联系到《后会友期》中许飞对厉娜的对话，列出日常句末添加名字的仿写，并报道芒果TV将其用于节目条目文案。另打开VISTA看天下在搜狐时间线的文章，交叉核对了日常碎碎念加后缀的玩法。"
+        }
+      ],
+      "popularity": {
+        "current_status": "not_measured",
+        "snapshots": []
+      },
+      "cautions": [
+        "适合熟人间自嘲和轻度抱怨；不要嘲笑当事人的真实情绪、编造明星关系内幕，也不要在他人认真倾诉时机械刷梗。"
+      ],
+      "rights": {
+        "third_party_media_included": false,
+        "media_reuse_permission": "not_established",
+        "original_explanation_license": "MIT"
+      }
+    },
     {
       "id": "cn-big-water",
       "title": "喝大水",

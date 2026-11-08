@@ -1,6 +1,6 @@
 /* Generated from explicit public resources; never add private API data to this cache. */
 'use strict';
-const VERSION="fac59460abc8b0af";
+const VERSION="5bed5ba51128cdcf";
 const RESOURCES=["app.html", "app.css", "app-home.js", "app-pwa.js", "app-pwa.css", "offline.html", "manifest.webmanifest", "预览.html", "preview.js", "本地工作台.html", "workbench.js", "workbench.css", "pwa/icons/icon.svg", "pwa/icons/icon-192.png", "pwa/icons/icon-512.png", "pwa/icons/apple-touch-icon.png", "create-funny-meme-cards/assets/knowledge/knowledge.json", "create-funny-meme-cards/assets/knowledge/index.json", "create-funny-meme-cards/assets/knowledge/focus.json", "create-funny-meme-cards/assets/poster-studio/index.html", "create-funny-meme-cards/assets/poster-studio/studio.css", "create-funny-meme-cards/assets/poster-studio/studio.js", "create-funny-meme-cards/assets/poster-studio/styles.js", "create-funny-meme-cards/assets/poster-studio/samples.js", "create-funny-meme-cards/assets/poster-studio/vendor/qrcode.js", "create-funny-meme-cards/assets/poster-studio/vendor/jsQR.js"];
 const SCOPE=self.registration.scope;
 const PREFIX='meme-pwa:'+SCOPE+':';

@@ -1,7 +1,62 @@
 {
   "schema_version": "0.4.0-preview",
-  "record_count": 57,
+  "record_count": 60,
   "entries": [
+    {
+      "id": "cn-user-17028e9312f2",
+      "title": "背手负鼠",
+      "year": 2026,
+      "decade": "2020s",
+      "language": "zh-CN",
+      "kind": "phrase_template",
+      "template_family": "cn-user-17028e9312f2",
+      "suitability": "adapt",
+      "categories": [
+        "meme"
+      ],
+      "recent_evidence_date": "2026-11-03",
+      "social_functions": [
+        "self_mock",
+        "bond"
+      ]
+    },
+    {
+      "id": "cn-user-3ae4cc3dfeaf",
+      "title": "不烧心",
+      "year": 2026,
+      "decade": "2020s",
+      "language": "zh-CN",
+      "kind": "phrase_template",
+      "template_family": "cn-user-3ae4cc3dfeaf",
+      "suitability": "adapt",
+      "categories": [
+        "meme",
+        "slang"
+      ],
+      "recent_evidence_date": "2026-11-03",
+      "social_functions": [
+        "praise",
+        "rating"
+      ]
+    },
+    {
+      "id": "cn-user-4c06af2b5a95",
+      "title": "厉娜后缀（××，厉娜）",
+      "year": 2026,
+      "decade": "2020s",
+      "language": "zh-CN",
+      "kind": "phrase_template",
+      "template_family": "cn-user-4c06af2b5a95",
+      "suitability": "adapt",
+      "categories": [
+        "meme"
+      ],
+      "recent_evidence_date": "2026-11-03",
+      "social_functions": [
+        "self_mock",
+        "bond"
+      ]
+    },
     {
       "id": "cn-big-water",
       "title": "喝大水",
